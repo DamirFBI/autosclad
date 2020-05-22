@@ -43,9 +43,9 @@ namespace AutoSclad
             DataTable table = new DataTable();   //Создания переменной и выделение памяти
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();   //Создания переменной и выделение памяти
-            string TypeUserBD = "";
+            string TypeUserBD = "Работник";
 
-            MySqlCommand command = new MySqlCommand(" SELECT * FROM `users` WHERE `login` = @uL, `pass` = @uP AND `typeuser` = @uT ", db.getconnection());
+            MySqlCommand command = new MySqlCommand(" SELECT * FROM `users` WHERE `login` = @uL AND `pass` = @uP AND `typeuser` = @uT ", db.getconnection());
             command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginuser;  //Присвоения значений из БД
             command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passuser;  //Присвоения значений из БД
             command.Parameters.Add("@uT", MySqlDbType.VarChar).Value = TypeUserBD;  //Присвоения значений из БД
@@ -53,17 +53,19 @@ namespace AutoSclad
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
-            if (table.Rows.Count > 0)      //Если есть данные в БД
+            if (table.Rows.Count > 0)
+            {      //Если есть данные в БД
                 MessageBox.Show("Авторизованы");    //Выводит сообщение что вы "Авторизованы"
+                if (TypeUserBD == "Работник")
+                {
+                    this.Hide();
+                    Workpanelman workpanelOpenman = new Workpanelman();
+                    workpanelOpenman.Show(); //Закрывает программу.
+
+                }
+            }
             else                                    //Иначе
                 MessageBox.Show("Неверный пароль или логин");   //Выводит сообщение что "Неверный пароль или логин"
-            if (TypeUserBD == "Работник")
-            {
-                this.Close();
-                Workpanelman workpanelOpenman = new Workpanelman();
-                workpanelOpenman.Show(); //Закрывает программу.
-
-            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -87,6 +89,11 @@ namespace AutoSclad
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginform_Load(object sender, EventArgs e)
         {
 
         }
