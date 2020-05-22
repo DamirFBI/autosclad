@@ -20,7 +20,7 @@ namespace AutoSclad
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MasterWork());
+            Application.Run(new loginform());
         }
     }
 }

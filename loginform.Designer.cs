@@ -139,6 +139,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loginform";
             this.Text = "Авторизация";
+            this.Load += new System.EventHandler(this.loginform_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.loginform_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.loginform_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
