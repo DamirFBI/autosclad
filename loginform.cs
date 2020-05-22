@@ -59,7 +59,7 @@ namespace AutoSclad
                 MessageBox.Show("Авторизованы");    //Выводит сообщение что вы "Авторизованы"
                 if (TypeUserBD == "Работник")
                 {
-                    this.Close();
+                    this.Hide();
                     Workpanelman workpanelOpenman = new Workpanelman();
                     workpanelOpenman.Show(); //Закрывает программу.
 
@@ -67,7 +67,7 @@ namespace AutoSclad
                 if (TypeUserBD == "Кладовщик")
                 {
 
-                    this.Close();
+                    this.Hide();
                     MasterWork MasterWorkOpen = new MasterWork();
                     MasterWorkOpen.Show(); //Закрывает программу.
 
@@ -75,7 +75,7 @@ namespace AutoSclad
                 if (TypeUserBD == "Admin")
                 {
 
-                    this.Close();
+                    this.Hide();
                     RegisterForm RegisterFormOpen = new RegisterForm();
                     RegisterFormOpen.Show(); //Закрывает программу.
 
