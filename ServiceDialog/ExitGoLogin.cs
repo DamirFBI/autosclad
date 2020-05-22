@@ -40,8 +40,7 @@ namespace AutoSclad.ServiceDialog
 
         private void NoExit_MouseClick(object sender, MouseEventArgs e)
         {
-            this.Hide();
-            return;
+            this.Close();
         }
 
         private void ExitProgramm_Click(object sender, EventArgs e)
