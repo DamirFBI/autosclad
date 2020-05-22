@@ -1,4 +1,5 @@
-﻿using AutoSclad.Workman;
+﻿using AutoSclad.MasterSclad;
+using AutoSclad.Workman;
 using MySql.Data.MySqlClient;
 using System;
 using System.Data;
@@ -32,7 +33,7 @@ namespace AutoSclad
             lastPoint = new Point(e.X, e.Y);    //Закрепляет позицию после перемещения
         }
 
-        private void buttonlogin_Click(object sender, EventArgs e)
+        public void buttonlogin_Click(object sender, EventArgs e)
         {
             string loginuser = LoginBox.Text;       //Создание переменной loginuser и присвоения к логинБоксу
             string passuser = PasswordBox.Text;     //Создание переменной passuser и присвоения к парольБоксу
@@ -58,9 +59,25 @@ namespace AutoSclad
                 MessageBox.Show("Авторизованы");    //Выводит сообщение что вы "Авторизованы"
                 if (TypeUserBD == "Работник")
                 {
-                    this.Hide();
+                    this.Close();
                     Workpanelman workpanelOpenman = new Workpanelman();
                     workpanelOpenman.Show(); //Закрывает программу.
+
+                }
+                if (TypeUserBD == "Кладовщик")
+                {
+
+                    this.Close();
+                    MasterWork MasterWorkOpen = new MasterWork();
+                    MasterWorkOpen.Show(); //Закрывает программу.
+
+                }
+                if (TypeUserBD == "Admin")
+                {
+
+                    this.Close();
+                    RegisterForm RegisterFormOpen = new RegisterForm();
+                    RegisterFormOpen.Show(); //Закрывает программу.
 
                 }
             }

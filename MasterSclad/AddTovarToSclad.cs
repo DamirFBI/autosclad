@@ -21,5 +21,10 @@ namespace AutoSclad.MasterSclad
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
