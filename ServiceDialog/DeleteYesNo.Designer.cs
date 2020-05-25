@@ -35,6 +35,7 @@
             // 
             // YesDeleteButton
             // 
+            this.YesDeleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.YesDeleteButton.Location = new System.Drawing.Point(29, 43);
             this.YesDeleteButton.Name = "YesDeleteButton";
             this.YesDeleteButton.Size = new System.Drawing.Size(75, 23);
@@ -53,6 +54,7 @@
             // 
             // NoDeleteButton
             // 
+            this.NoDeleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NoDeleteButton.Location = new System.Drawing.Point(143, 43);
             this.NoDeleteButton.Name = "NoDeleteButton";
             this.NoDeleteButton.Size = new System.Drawing.Size(75, 23);

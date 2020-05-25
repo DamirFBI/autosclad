@@ -57,6 +57,7 @@
             // CloseButton
             // 
             this.CloseButton.AutoSize = true;
+            this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseButton.Location = new System.Drawing.Point(526, 9);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(51, 13);

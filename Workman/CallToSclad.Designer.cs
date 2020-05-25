@@ -112,6 +112,7 @@
             // CloseCallToSclad
             // 
             this.CloseCallToSclad.AutoSize = true;
+            this.CloseCallToSclad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseCallToSclad.Location = new System.Drawing.Point(567, 425);
             this.CloseCallToSclad.Name = "CloseCallToSclad";
             this.CloseCallToSclad.Size = new System.Drawing.Size(41, 13);
