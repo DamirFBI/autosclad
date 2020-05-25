@@ -31,32 +31,40 @@
             this.CloseButton = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.AddTovarToScladTapContorl = new System.Windows.Forms.TabPage();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.AddTovarFormDataKonecSrok = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.AddTovarFormGlubina = new System.Windows.Forms.TextBox();
+            this.AddTovarFormShirina = new System.Windows.Forms.TextBox();
+            this.AddTovarFormVisota = new System.Windows.Forms.TextBox();
+            this.AddTovarFormNameSclad = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DeleteTovarToScladTapControl = new System.Windows.Forms.TabPage();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.DeleteTovarFormNameSclad = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.DeleteTovarFormTip = new System.Windows.Forms.ComboBox();
+            this.DeleteTovarFormModel = new System.Windows.Forms.ComboBox();
+            this.DeleteTovarFormMarka = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.DeleteTovarFormColigestvo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.DeleteTovarFormArticul = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.AddTovarFormArtikul = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.AddTovarFormTypeTovar = new System.Windows.Forms.TextBox();
+            this.AddTovarFormMarkaTovara = new System.Windows.Forms.TextBox();
+            this.AddTovarFormModelTovara = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.AddTovarToScladTapContorl.SuspendLayout();
             this.DeleteTovarToScladTapControl.SuspendLayout();
@@ -85,12 +93,20 @@
             // 
             // AddTovarToScladTapContorl
             // 
-            this.AddTovarToScladTapContorl.Controls.Add(this.dateTimePicker1);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormModelTovara);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormMarkaTovara);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormTypeTovar);
+            this.AddTovarToScladTapContorl.Controls.Add(this.label18);
+            this.AddTovarToScladTapContorl.Controls.Add(this.label17);
+            this.AddTovarToScladTapContorl.Controls.Add(this.label16);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormArtikul);
+            this.AddTovarToScladTapContorl.Controls.Add(this.label15);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormDataKonecSrok);
             this.AddTovarToScladTapContorl.Controls.Add(this.label9);
-            this.AddTovarToScladTapContorl.Controls.Add(this.textBox3);
-            this.AddTovarToScladTapContorl.Controls.Add(this.textBox2);
-            this.AddTovarToScladTapContorl.Controls.Add(this.textBox1);
-            this.AddTovarToScladTapContorl.Controls.Add(this.comboBox1);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormGlubina);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormShirina);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormVisota);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormNameSclad);
             this.AddTovarToScladTapContorl.Controls.Add(this.label6);
             this.AddTovarToScladTapContorl.Controls.Add(this.label5);
             this.AddTovarToScladTapContorl.Controls.Add(this.label4);
@@ -104,12 +120,12 @@
             this.AddTovarToScladTapContorl.Text = "Добавление на склад товара";
             this.AddTovarToScladTapContorl.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // AddTovarFormDataKonecSrok
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(150, 120);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(220, 22);
-            this.dateTimePicker1.TabIndex = 10;
+            this.AddTovarFormDataKonecSrok.Location = new System.Drawing.Point(150, 120);
+            this.AddTovarFormDataKonecSrok.Name = "AddTovarFormDataKonecSrok";
+            this.AddTovarFormDataKonecSrok.Size = new System.Drawing.Size(220, 22);
+            this.AddTovarFormDataKonecSrok.TabIndex = 10;
             // 
             // label9
             // 
@@ -120,34 +136,34 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Срок годность";
             // 
-            // textBox3
+            // AddTovarFormGlubina
             // 
-            this.textBox3.Location = new System.Drawing.Point(155, 87);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 8;
+            this.AddTovarFormGlubina.Location = new System.Drawing.Point(155, 87);
+            this.AddTovarFormGlubina.Name = "AddTovarFormGlubina";
+            this.AddTovarFormGlubina.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormGlubina.TabIndex = 8;
             // 
-            // textBox2
+            // AddTovarFormShirina
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 7;
+            this.AddTovarFormShirina.Location = new System.Drawing.Point(155, 58);
+            this.AddTovarFormShirina.Name = "AddTovarFormShirina";
+            this.AddTovarFormShirina.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormShirina.TabIndex = 7;
             // 
-            // textBox1
+            // AddTovarFormVisota
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 6;
+            this.AddTovarFormVisota.Location = new System.Drawing.Point(155, 29);
+            this.AddTovarFormVisota.Name = "AddTovarFormVisota";
+            this.AddTovarFormVisota.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormVisota.TabIndex = 6;
             // 
-            // comboBox1
+            // AddTovarFormNameSclad
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(150, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.AddTovarFormNameSclad.FormattingEnabled = true;
+            this.AddTovarFormNameSclad.Location = new System.Drawing.Point(150, 6);
+            this.AddTovarFormNameSclad.Name = "AddTovarFormNameSclad";
+            this.AddTovarFormNameSclad.Size = new System.Drawing.Size(121, 21);
+            this.AddTovarFormNameSclad.TabIndex = 5;
             // 
             // label6
             // 
@@ -197,15 +213,15 @@
             // 
             // DeleteTovarToScladTapControl
             // 
-            this.DeleteTovarToScladTapControl.Controls.Add(this.textBox5);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormArticul);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label14);
-            this.DeleteTovarToScladTapControl.Controls.Add(this.textBox4);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormColigestvo);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label13);
-            this.DeleteTovarToScladTapControl.Controls.Add(this.comboBox5);
-            this.DeleteTovarToScladTapControl.Controls.Add(this.comboBox4);
-            this.DeleteTovarToScladTapControl.Controls.Add(this.comboBox3);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormMarka);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormModel);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormTip);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label12);
-            this.DeleteTovarToScladTapControl.Controls.Add(this.comboBox2);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormNameSclad);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label11);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label10);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label1);
@@ -219,13 +235,13 @@
             this.DeleteTovarToScladTapControl.Text = "Списание товара";
             this.DeleteTovarToScladTapControl.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // DeleteTovarFormNameSclad
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(90, 7);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 5;
+            this.DeleteTovarFormNameSclad.FormattingEnabled = true;
+            this.DeleteTovarFormNameSclad.Location = new System.Drawing.Point(90, 7);
+            this.DeleteTovarFormNameSclad.Name = "DeleteTovarFormNameSclad";
+            this.DeleteTovarFormNameSclad.Size = new System.Drawing.Size(121, 21);
+            this.DeleteTovarFormNameSclad.TabIndex = 5;
             // 
             // label11
             // 
@@ -281,29 +297,29 @@
             this.label12.TabIndex = 6;
             this.label12.Text = "(Тут должна быть дата)";
             // 
-            // comboBox3
+            // DeleteTovarFormTip
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(10, 92);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 7;
+            this.DeleteTovarFormTip.FormattingEnabled = true;
+            this.DeleteTovarFormTip.Location = new System.Drawing.Point(10, 92);
+            this.DeleteTovarFormTip.Name = "DeleteTovarFormTip";
+            this.DeleteTovarFormTip.Size = new System.Drawing.Size(121, 21);
+            this.DeleteTovarFormTip.TabIndex = 7;
             // 
-            // comboBox4
+            // DeleteTovarFormModel
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(137, 92);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 8;
+            this.DeleteTovarFormModel.FormattingEnabled = true;
+            this.DeleteTovarFormModel.Location = new System.Drawing.Point(137, 92);
+            this.DeleteTovarFormModel.Name = "DeleteTovarFormModel";
+            this.DeleteTovarFormModel.Size = new System.Drawing.Size(121, 21);
+            this.DeleteTovarFormModel.TabIndex = 8;
             // 
-            // comboBox5
+            // DeleteTovarFormMarka
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(264, 92);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
-            this.comboBox5.TabIndex = 9;
+            this.DeleteTovarFormMarka.FormattingEnabled = true;
+            this.DeleteTovarFormMarka.Location = new System.Drawing.Point(264, 92);
+            this.DeleteTovarFormMarka.Name = "DeleteTovarFormMarka";
+            this.DeleteTovarFormMarka.Size = new System.Drawing.Size(121, 21);
+            this.DeleteTovarFormMarka.TabIndex = 9;
             // 
             // label13
             // 
@@ -314,12 +330,12 @@
             this.label13.TabIndex = 10;
             this.label13.Text = "Количество";
             // 
-            // textBox4
+            // DeleteTovarFormColigestvo
             // 
-            this.textBox4.Location = new System.Drawing.Point(407, 148);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(95, 22);
-            this.textBox4.TabIndex = 11;
+            this.DeleteTovarFormColigestvo.Location = new System.Drawing.Point(407, 148);
+            this.DeleteTovarFormColigestvo.Name = "DeleteTovarFormColigestvo";
+            this.DeleteTovarFormColigestvo.Size = new System.Drawing.Size(95, 22);
+            this.DeleteTovarFormColigestvo.TabIndex = 11;
             // 
             // label14
             // 
@@ -330,12 +346,76 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "Артикул";
             // 
-            // textBox5
+            // DeleteTovarFormArticul
             // 
-            this.textBox5.Location = new System.Drawing.Point(402, 92);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 13;
+            this.DeleteTovarFormArticul.Location = new System.Drawing.Point(402, 92);
+            this.DeleteTovarFormArticul.Name = "DeleteTovarFormArticul";
+            this.DeleteTovarFormArticul.Size = new System.Drawing.Size(100, 22);
+            this.DeleteTovarFormArticul.TabIndex = 13;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(277, 9);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 13);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Артикул";
+            // 
+            // AddTovarFormArtikul
+            // 
+            this.AddTovarFormArtikul.Location = new System.Drawing.Point(333, 6);
+            this.AddTovarFormArtikul.Name = "AddTovarFormArtikul";
+            this.AddTovarFormArtikul.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormArtikul.TabIndex = 12;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(262, 32);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(26, 13);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "Тип";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(262, 61);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(42, 13);
+            this.label17.TabIndex = 14;
+            this.label17.Text = "Марка";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(262, 90);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(48, 13);
+            this.label18.TabIndex = 15;
+            this.label18.Text = "Модель";
+            // 
+            // AddTovarFormTypeTovar
+            // 
+            this.AddTovarFormTypeTovar.Location = new System.Drawing.Point(333, 29);
+            this.AddTovarFormTypeTovar.Name = "AddTovarFormTypeTovar";
+            this.AddTovarFormTypeTovar.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormTypeTovar.TabIndex = 16;
+            // 
+            // AddTovarFormMarkaTovara
+            // 
+            this.AddTovarFormMarkaTovara.Location = new System.Drawing.Point(333, 58);
+            this.AddTovarFormMarkaTovara.Name = "AddTovarFormMarkaTovara";
+            this.AddTovarFormMarkaTovara.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormMarkaTovara.TabIndex = 17;
+            // 
+            // AddTovarFormModelTovara
+            // 
+            this.AddTovarFormModelTovara.Location = new System.Drawing.Point(333, 87);
+            this.AddTovarFormModelTovara.Name = "AddTovarFormModelTovara";
+            this.AddTovarFormModelTovara.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormModelTovara.TabIndex = 18;
             // 
             // AddTovarToSclad
             // 
@@ -370,25 +450,33 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox AddTovarFormGlubina;
+        private System.Windows.Forms.TextBox AddTovarFormShirina;
+        private System.Windows.Forms.TextBox AddTovarFormVisota;
+        private System.Windows.Forms.ComboBox AddTovarFormNameSclad;
+        private System.Windows.Forms.DateTimePicker AddTovarFormDataKonecSrok;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox DeleteTovarFormNameSclad;
+        private System.Windows.Forms.TextBox DeleteTovarFormArticul;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox DeleteTovarFormColigestvo;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox DeleteTovarFormMarka;
+        private System.Windows.Forms.ComboBox DeleteTovarFormModel;
+        private System.Windows.Forms.ComboBox DeleteTovarFormTip;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox AddTovarFormModelTovara;
+        private System.Windows.Forms.TextBox AddTovarFormMarkaTovara;
+        private System.Windows.Forms.TextBox AddTovarFormTypeTovar;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox AddTovarFormArtikul;
+        private System.Windows.Forms.Label label15;
     }
 }
