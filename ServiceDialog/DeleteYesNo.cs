@@ -31,5 +31,10 @@ namespace AutoSclad.ServiceDialog
         {
             lastPoint = new Point(e.X, e.Y);    //Закрепляет позицию после перемещения
         }
+
+        private void NoDeleteButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.CloseButton = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.AddTovarToScladTapContorl = new System.Windows.Forms.TabPage();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,31 +43,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DeleteTovarToScladTapControl = new System.Windows.Forms.TabPage();
-            this.CallGoScladTapControl = new System.Windows.Forms.TabPage();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.AddTovarToScladTapContorl.SuspendLayout();
             this.DeleteTovarToScladTapControl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // CloseButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(526, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Закрыть";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.CloseButton.AutoSize = true;
+            this.CloseButton.Location = new System.Drawing.Point(526, 9);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(51, 13);
+            this.CloseButton.TabIndex = 0;
+            this.CloseButton.Text = "Закрыть";
+            this.CloseButton.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.AddTovarToScladTapContorl);
             this.tabControl1.Controls.Add(this.DeleteTovarToScladTapControl);
-            this.tabControl1.Controls.Add(this.CallGoScladTapControl);
             this.tabControl1.Location = new System.Drawing.Point(13, 9);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -92,6 +90,22 @@
             this.AddTovarToScladTapContorl.TabIndex = 0;
             this.AddTovarToScladTapContorl.Text = "Добавление на склад товара";
             this.AddTovarToScladTapContorl.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(150, 120);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(220, 22);
+            this.dateTimePicker1.TabIndex = 10;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 120);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(84, 13);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Срок годность";
             // 
             // textBox3
             // 
@@ -180,14 +194,14 @@
             this.DeleteTovarToScladTapControl.Text = "Списание товара";
             this.DeleteTovarToScladTapControl.UseVisualStyleBackColor = true;
             // 
-            // CallGoScladTapControl
+            // label8
             // 
-            this.CallGoScladTapControl.Location = new System.Drawing.Point(4, 22);
-            this.CallGoScladTapControl.Name = "CallGoScladTapControl";
-            this.CallGoScladTapControl.Size = new System.Drawing.Size(556, 413);
-            this.CallGoScladTapControl.TabIndex = 2;
-            this.CallGoScladTapControl.Text = "Запросы работника";
-            this.CallGoScladTapControl.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(85, 13);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Срок годности";
             // 
             // label7
             // 
@@ -198,41 +212,18 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Склад";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 24);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 13);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Срок годности";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 120);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 13);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Срок годность";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(150, 120);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(220, 22);
-            this.dateTimePicker1.TabIndex = 10;
-            // 
             // AddTovarToSclad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddTovarToSclad";
             this.Text = "AddTovarToSclad";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AddTovarToSclad_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AddTovarToSclad_MouseMove);
             this.tabControl1.ResumeLayout(false);
             this.AddTovarToScladTapContorl.ResumeLayout(false);
             this.AddTovarToScladTapContorl.PerformLayout();
@@ -245,11 +236,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label CloseButton;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage AddTovarToScladTapContorl;
         private System.Windows.Forms.TabPage DeleteTovarToScladTapControl;
-        private System.Windows.Forms.TabPage CallGoScladTapControl;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

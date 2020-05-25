@@ -44,7 +44,7 @@ namespace AutoSclad
             DataTable table = new DataTable();   //Создания переменной и выделение памяти
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();   //Создания переменной и выделение памяти
-            string TypeUserBD = "Работник";
+            string TypeUserBD = "Кладовщик";
 
             MySqlCommand command = new MySqlCommand(" SELECT * FROM `users` WHERE `login` = @uL AND `pass` = @uP AND `typeuser` = @uT ", db.getconnection());
             command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginuser;  //Присвоения значений из БД
@@ -64,7 +64,7 @@ namespace AutoSclad
                     workpanelOpenman.Show(); //Закрывает программу.
 
                 }
-                if (TypeUserBD == "Кладовщик")
+                else if (TypeUserBD == "Кладовщик")
                 {
 
                     this.Hide();
@@ -72,7 +72,7 @@ namespace AutoSclad
                     MasterWorkOpen.Show(); //Закрывает программу.
 
                 }
-                if (TypeUserBD == "Admin")
+                else if (TypeUserBD == "Admin")
                 {
 
                     this.Hide();

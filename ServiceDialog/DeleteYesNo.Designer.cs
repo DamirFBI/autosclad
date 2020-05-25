@@ -59,6 +59,7 @@
             this.NoDeleteButton.TabIndex = 2;
             this.NoDeleteButton.Text = "Нет";
             this.NoDeleteButton.UseVisualStyleBackColor = true;
+            this.NoDeleteButton.Click += new System.EventHandler(this.NoDeleteButton_Click);
             // 
             // DeleteYesNo
             // 
