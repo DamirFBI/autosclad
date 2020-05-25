@@ -140,6 +140,12 @@
     <Compile Include="ServiceDialog\AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ServiceDialog\DeleteYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceDialog\DeleteYesNo.Designer.cs">
+      <DependentUpon>DeleteYesNo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ServiceDialog\ExitGoLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ServiceDialog\AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceDialog\DeleteYesNo.resx">
+      <DependentUpon>DeleteYesNo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServiceDialog\ExitGoLogin.resx">
       <DependentUpon>ExitGoLogin.cs</DependentUpon>
