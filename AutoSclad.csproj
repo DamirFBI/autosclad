@@ -114,6 +114,12 @@
     <Compile Include="MasterSclad\AddTovarToSclad.Designer.cs">
       <DependentUpon>AddTovarToSclad.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasterSclad\CallWorkmanToMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSclad\CallWorkmanToMaster.Designer.cs">
+      <DependentUpon>CallWorkmanToMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="MasterSclad\MasterWork.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\AddTovarToSclad.resx">
       <DependentUpon>AddTovarToSclad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSclad\CallWorkmanToMaster.resx">
+      <DependentUpon>CallWorkmanToMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\MasterWork.resx">
       <DependentUpon>MasterWork.cs</DependentUpon>
