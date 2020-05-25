@@ -43,12 +43,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DeleteTovarToScladTapControl = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.AddTovarToScladTapContorl.SuspendLayout();
             this.DeleteTovarToScladTapControl.SuspendLayout();
@@ -189,6 +197,14 @@
             // 
             // DeleteTovarToScladTapControl
             // 
+            this.DeleteTovarToScladTapControl.Controls.Add(this.textBox5);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.label14);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.textBox4);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.label13);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.comboBox5);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.comboBox4);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.comboBox3);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.label12);
             this.DeleteTovarToScladTapControl.Controls.Add(this.comboBox2);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label11);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label10);
@@ -203,14 +219,49 @@
             this.DeleteTovarToScladTapControl.Text = "Списание товара";
             this.DeleteTovarToScladTapControl.UseVisualStyleBackColor = true;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(90, 7);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 5;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(43, 72);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(26, 13);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Тип";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(172, 72);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 13);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Модель";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(305, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Марка";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 86);
+            this.label8.Location = new System.Drawing.Point(7, 42);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 13);
+            this.label8.Size = new System.Drawing.Size(150, 13);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Срок годности";
+            this.label8.Text = "Срок окончания годности:";
             // 
             // label7
             // 
@@ -221,40 +272,70 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Склад";
             // 
-            // label1
+            // label12
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(209, 160);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Марка";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(163, 42);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(130, 13);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "(Тут должна быть дата)";
             // 
-            // label10
+            // comboBox3
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(116, 160);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 13);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Модель";
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(10, 92);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 7;
             // 
-            // label11
+            // comboBox4
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(38, 160);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(26, 13);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "Тип";
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(137, 92);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 8;
             // 
-            // comboBox2
+            // comboBox5
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(90, 7);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 5;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(264, 92);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(121, 21);
+            this.comboBox5.TabIndex = 9;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(422, 132);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(69, 13);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Количество";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(407, 148);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(95, 22);
+            this.textBox4.TabIndex = 11;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(422, 72);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(50, 13);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Артикул";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(402, 92);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 22);
+            this.textBox5.TabIndex = 13;
             // 
             // AddTovarToSclad
             // 
@@ -301,5 +382,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label12;
     }
 }
