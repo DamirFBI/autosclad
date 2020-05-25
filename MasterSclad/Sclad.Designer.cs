@@ -62,6 +62,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.SformirovatAdresIagenek = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -69,20 +72,23 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.DeleteSclad = new System.Windows.Forms.TabPage();
-            this.DeleteStelagSclad = new System.Windows.Forms.TabPage();
-            this.label16 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.DeleteScladButton = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.DeleteStelagSclad = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.ScladView = new System.Windows.Forms.Label();
+            this.DeleteStelagButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.CreatedSclad.SuspendLayout();
             this.AddStelagSclad.SuspendLayout();
             this.SformirovatAdresIagenek.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.DeleteSclad.SuspendLayout();
+            this.DeleteStelagSclad.SuspendLayout();
             this.SuspendLayout();
             // 
             // Exit
@@ -414,6 +420,29 @@
             this.SformirovatAdresIagenek.Text = "Сформировать адресацию ячеек";
             this.SformirovatAdresIagenek.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(11, 334);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(637, 23);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Распечатать адрес";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(7, 21);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(119, 150);
+            this.panel3.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(132, 21);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(516, 150);
+            this.panel2.TabIndex = 3;
+            // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage1);
@@ -441,7 +470,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(637, 159);
+            this.tabPage2.Size = new System.Drawing.Size(637, 129);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Высота";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -450,7 +479,7 @@
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(637, 159);
+            this.tabPage3.Size = new System.Drawing.Size(637, 129);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Длина";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -459,7 +488,7 @@
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(637, 159);
+            this.tabPage4.Size = new System.Drawing.Size(637, 129);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Глубина";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -482,29 +511,6 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Склад";
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(132, 21);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(516, 150);
-            this.panel2.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(7, 21);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(119, 150);
-            this.panel3.TabIndex = 4;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(11, 334);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(637, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Распечатать адрес";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // DeleteSclad
             // 
             this.DeleteSclad.Controls.Add(this.DeleteScladButton);
@@ -517,14 +523,23 @@
             this.DeleteSclad.Text = "Удаление склада";
             this.DeleteSclad.UseVisualStyleBackColor = true;
             // 
-            // DeleteStelagSclad
+            // DeleteScladButton
             // 
-            this.DeleteStelagSclad.Location = new System.Drawing.Point(4, 22);
-            this.DeleteStelagSclad.Name = "DeleteStelagSclad";
-            this.DeleteStelagSclad.Size = new System.Drawing.Size(652, 365);
-            this.DeleteStelagSclad.TabIndex = 4;
-            this.DeleteStelagSclad.Text = "Удаление стелажа";
-            this.DeleteStelagSclad.UseVisualStyleBackColor = true;
+            this.DeleteScladButton.Location = new System.Drawing.Point(25, 55);
+            this.DeleteScladButton.Name = "DeleteScladButton";
+            this.DeleteScladButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteScladButton.TabIndex = 2;
+            this.DeleteScladButton.Text = "Удалить";
+            this.DeleteScladButton.UseVisualStyleBackColor = true;
+            this.DeleteScladButton.Click += new System.EventHandler(this.DeleteScladButton_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(137, 13);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 1;
             // 
             // label16
             // 
@@ -535,22 +550,62 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Наиминование склада";
             // 
-            // comboBox2
+            // DeleteStelagSclad
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(137, 13);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 1;
+            this.DeleteStelagSclad.Controls.Add(this.panel4);
+            this.DeleteStelagSclad.Controls.Add(this.label17);
+            this.DeleteStelagSclad.Controls.Add(this.comboBox3);
+            this.DeleteStelagSclad.Controls.Add(this.ScladView);
+            this.DeleteStelagSclad.Controls.Add(this.DeleteStelagButton);
+            this.DeleteStelagSclad.Location = new System.Drawing.Point(4, 22);
+            this.DeleteStelagSclad.Name = "DeleteStelagSclad";
+            this.DeleteStelagSclad.Size = new System.Drawing.Size(652, 365);
+            this.DeleteStelagSclad.TabIndex = 4;
+            this.DeleteStelagSclad.Text = "Удаление стелажа";
+            this.DeleteStelagSclad.UseVisualStyleBackColor = true;
             // 
-            // DeleteScladButton
+            // panel4
             // 
-            this.DeleteScladButton.Location = new System.Drawing.Point(25, 55);
-            this.DeleteScladButton.Name = "DeleteScladButton";
-            this.DeleteScladButton.Size = new System.Drawing.Size(75, 23);
-            this.DeleteScladButton.TabIndex = 2;
-            this.DeleteScladButton.Text = "Удалить";
-            this.DeleteScladButton.UseVisualStyleBackColor = true;
+            this.panel4.Location = new System.Drawing.Point(99, 45);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(550, 317);
+            this.panel4.TabIndex = 4;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(31, 85);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(46, 13);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Стелаж";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(80, 10);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 2;
+            // 
+            // ScladView
+            // 
+            this.ScladView.AutoSize = true;
+            this.ScladView.Location = new System.Drawing.Point(15, 13);
+            this.ScladView.Name = "ScladView";
+            this.ScladView.Size = new System.Drawing.Size(38, 13);
+            this.ScladView.TabIndex = 1;
+            this.ScladView.Text = "Склад";
+            // 
+            // DeleteStelagButton
+            // 
+            this.DeleteStelagButton.Location = new System.Drawing.Point(18, 193);
+            this.DeleteStelagButton.Name = "DeleteStelagButton";
+            this.DeleteStelagButton.Size = new System.Drawing.Size(75, 158);
+            this.DeleteStelagButton.TabIndex = 0;
+            this.DeleteStelagButton.Text = "Удалить";
+            this.DeleteStelagButton.UseVisualStyleBackColor = true;
+            this.DeleteStelagButton.Click += new System.EventHandler(this.DeleteStelagButton_Click);
             // 
             // Sclad
             // 
@@ -560,6 +615,8 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(765, 415);
+            this.MinimumSize = new System.Drawing.Size(765, 415);
             this.Name = "Sclad";
             this.Text = "Sclad";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sclad_MouseDown);
@@ -574,6 +631,8 @@
             this.tabControl2.ResumeLayout(false);
             this.DeleteSclad.ResumeLayout(false);
             this.DeleteSclad.PerformLayout();
+            this.DeleteStelagSclad.ResumeLayout(false);
+            this.DeleteStelagSclad.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -629,5 +688,10 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TabPage DeleteStelagSclad;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label ScladView;
+        private System.Windows.Forms.Button DeleteStelagButton;
     }
 }

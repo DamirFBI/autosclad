@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoSclad.ServiceDialog;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,18 @@ namespace AutoSclad.MasterSclad
         private void Exit_Click(object sender, EventArgs e)
         {
             this.Close(); //Закрывает программу.
+        }
+
+        private void DeleteStelagButton_Click(object sender, EventArgs e)
+        {
+            DeleteYesNo deleteYesNoStelagOpenDialog = new DeleteYesNo();
+            deleteYesNoStelagOpenDialog.ShowDialog();
+        }
+
+        private void DeleteScladButton_Click(object sender, EventArgs e)
+        {
+            DeleteYesNo deleteYesNoScladOpenDialog = new DeleteYesNo();
+            deleteYesNoScladOpenDialog.ShowDialog();
         }
     }
 }

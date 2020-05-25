@@ -73,6 +73,8 @@
             this.MinimumSize = new System.Drawing.Size(250, 80);
             this.Name = "DeleteYesNo";
             this.Text = "DeleteYesNo";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DeleteYesNo_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DeleteYesNo_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
 
