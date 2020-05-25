@@ -39,6 +39,8 @@
             this.CloseCallToSclad = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SformirovatZapros = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -136,11 +138,29 @@
             this.SformirovatZapros.UseVisualStyleBackColor = true;
             this.SformirovatZapros.Click += new System.EventHandler(this.SformirovatZapros_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(374, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Артикул";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(346, 81);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(120, 22);
+            this.textBox2.TabIndex = 14;
+            // 
             // CallToSclad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(617, 450);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.SformirovatZapros);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox4);
@@ -175,5 +195,7 @@
         private System.Windows.Forms.Label CloseCallToSclad;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button SformirovatZapros;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
