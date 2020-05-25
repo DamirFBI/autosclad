@@ -45,6 +45,9 @@
             this.DeleteTovarToScladTapControl = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.AddTovarToScladTapContorl.SuspendLayout();
             this.DeleteTovarToScladTapControl.SuspendLayout();
@@ -184,6 +187,9 @@
             // 
             // DeleteTovarToScladTapControl
             // 
+            this.DeleteTovarToScladTapControl.Controls.Add(this.label11);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.label10);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.label1);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label8);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label7);
             this.DeleteTovarToScladTapControl.Location = new System.Drawing.Point(4, 22);
@@ -197,7 +203,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 24);
+            this.label8.Location = new System.Drawing.Point(7, 86);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(85, 13);
             this.label8.TabIndex = 1;
@@ -211,6 +217,33 @@
             this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 0;
             this.label7.Text = "Склад";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(209, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Марка";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(116, 160);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 13);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Модель";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(38, 160);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(26, 13);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Тип";
             // 
             // AddTovarToSclad
             // 
@@ -253,5 +286,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label1;
     }
 }
