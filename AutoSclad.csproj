@@ -158,6 +158,12 @@
     <Compile Include="ServiceDialog\ExitGoLogin.Designer.cs">
       <DependentUpon>ExitGoLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ServiceDialog\Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceDialog\Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
     <Compile Include="Workman\CallToSclad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ServiceDialog\ExitGoLogin.resx">
       <DependentUpon>ExitGoLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceDialog\Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Workman\CallToSclad.resx">
       <DependentUpon>CallToSclad.cs</DependentUpon>

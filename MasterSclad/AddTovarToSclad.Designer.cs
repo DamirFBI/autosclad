@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.AddTovarToScladTapContorl.SuspendLayout();
             this.DeleteTovarToScladTapControl.SuspendLayout();
@@ -187,6 +188,7 @@
             // 
             // DeleteTovarToScladTapControl
             // 
+            this.DeleteTovarToScladTapControl.Controls.Add(this.comboBox2);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label11);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label10);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label1);
@@ -245,6 +247,14 @@
             this.label11.TabIndex = 4;
             this.label11.Text = "Тип";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(90, 7);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 5;
+            // 
             // AddTovarToSclad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,5 +299,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
