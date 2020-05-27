@@ -23,8 +23,8 @@ namespace AutoSclad
         {
             if (e.Button == MouseButtons.Left) //Если пользователь зажал левой кнопкой по окну, то он может передвигать окно.
             {
-              this.Left += e.X - lastPoint.X;
-              this.Top += e.Y - lastPoint.Y;
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
             }
         }
 

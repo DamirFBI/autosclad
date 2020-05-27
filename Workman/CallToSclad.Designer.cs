@@ -28,35 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CallFormMarka = new System.Windows.Forms.ComboBox();
-            this.CallFormTip = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.CallFormModel = new System.Windows.Forms.ComboBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.CloseCallToSclad = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SformirovatZapros = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // CallFormMarka
-            // 
-            this.CallFormMarka.FormattingEnabled = true;
-            this.CallFormMarka.Location = new System.Drawing.Point(218, 37);
-            this.CallFormMarka.Name = "CallFormMarka";
-            this.CallFormMarka.Size = new System.Drawing.Size(121, 21);
-            this.CallFormMarka.TabIndex = 1;
-            // 
-            // CallFormTip
-            // 
-            this.CallFormTip.FormattingEnabled = true;
-            this.CallFormTip.Location = new System.Drawing.Point(345, 37);
-            this.CallFormTip.Name = "CallFormTip";
-            this.CallFormTip.Size = new System.Drawing.Size(121, 21);
-            this.CallFormTip.TabIndex = 2;
             // 
             // label1
             // 
@@ -67,19 +49,10 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Марка";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(385, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Тип";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(496, 21);
+            this.label3.Location = new System.Drawing.Point(253, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 6;
@@ -88,19 +61,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(262, 65);
+            this.label4.Location = new System.Drawing.Point(262, 64);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Модель";
-            // 
-            // CallFormModel
-            // 
-            this.CallFormModel.FormattingEnabled = true;
-            this.CallFormModel.Location = new System.Drawing.Point(218, 81);
-            this.CallFormModel.Name = "CallFormModel";
-            this.CallFormModel.Size = new System.Drawing.Size(121, 21);
-            this.CallFormModel.TabIndex = 8;
             // 
             // listBox1
             // 
@@ -122,14 +87,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(473, 37);
+            this.textBox1.Location = new System.Drawing.Point(224, 121);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(115, 22);
             this.textBox1.TabIndex = 11;
             // 
             // SformirovatZapros
             // 
-            this.SformirovatZapros.Location = new System.Drawing.Point(248, 168);
+            this.SformirovatZapros.Location = new System.Drawing.Point(244, 198);
             this.SformirovatZapros.Name = "SformirovatZapros";
             this.SformirovatZapros.Size = new System.Drawing.Size(243, 23);
             this.SformirovatZapros.TabIndex = 12;
@@ -146,23 +111,35 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Список товара";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(224, 37);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(115, 22);
+            this.textBox2.TabIndex = 16;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(224, 80);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(115, 22);
+            this.textBox3.TabIndex = 17;
+            // 
             // CallToSclad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 320);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.SformirovatZapros);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.CallFormModel);
             this.Controls.Add(this.CloseCallToSclad);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CallFormTip);
-            this.Controls.Add(this.CallFormMarka);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(620, 320);
             this.MinimumSize = new System.Drawing.Size(620, 320);
@@ -176,18 +153,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox CallFormMarka;
-        private System.Windows.Forms.ComboBox CallFormTip;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox CallFormModel;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label CloseCallToSclad;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button SformirovatZapros;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

@@ -24,6 +24,6 @@ namespace AutoSclad
         {
             return connection;
         }
-            
+
     }
 }

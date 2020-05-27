@@ -120,6 +120,12 @@
     <Compile Include="MasterSclad\CallWorkmanToMaster.Designer.cs">
       <DependentUpon>CallWorkmanToMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasterSclad\CreatedMarkaAndModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSclad\CreatedMarkaAndModel.Designer.cs">
+      <DependentUpon>CreatedMarkaAndModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="MasterSclad\MasterWork.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     <EmbeddedResource Include="MasterSclad\CallWorkmanToMaster.resx">
       <DependentUpon>CallWorkmanToMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MasterSclad\CreatedMarkaAndModel.resx">
+      <DependentUpon>CreatedMarkaAndModel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\MasterWork.resx">
       <DependentUpon>MasterWork.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,14 +202,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +245,8 @@
   <ItemGroup>
     <Content Include="images\Key.png" />
     <Content Include="images\User.png" />
+    <None Include="images\search.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

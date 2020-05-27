@@ -47,7 +47,7 @@ namespace AutoSclad
         private void userNameField_Enter(object sender, EventArgs e)
         {
             if (userNameField.Text == "Введите имя")  // Если в поле имя введене "Введите имя"
-            { 
+            {
                 userNameField.Text = ""; // То поле пустует
                 userNameField.ForeColor = Color.Black;
             }
@@ -59,7 +59,7 @@ namespace AutoSclad
             {
                 userNameField.Text = "Введите имя"; //То он заполняется "Введите имя"
                 userNameField.ForeColor = Color.Gray;
-            }  
+            }
         }
 
         private void userSurnameField_Leave(object sender, EventArgs e)
@@ -118,7 +118,7 @@ namespace AutoSclad
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            if(userNameField.Text == "Введите имя")
+            if (userNameField.Text == "Введите имя")
             {
                 MessageBox.Show("Введите имя");
                 return;
@@ -149,13 +149,13 @@ namespace AutoSclad
             command.Parameters.Add("@name", MySqlDbType.VarChar).Value = userNameField.Text;
             command.Parameters.Add("@surname", MySqlDbType.VarChar).Value = userSurnameField.Text;
             if (Master.Checked == true)
-              {
-                  command.Parameters.Add("@typeuser", MySqlDbType.VarChar).Value = Master.Text;
-              }
-              if(WorkMan.Checked == true)
-              {
-                  command.Parameters.Add("@typeuser", MySqlDbType.VarChar).Value = WorkMan.Text;
-              } 
+            {
+                command.Parameters.Add("@typeuser", MySqlDbType.VarChar).Value = Master.Text;
+            }
+            if (WorkMan.Checked == true)
+            {
+                command.Parameters.Add("@typeuser", MySqlDbType.VarChar).Value = WorkMan.Text;
+            }
             db.openconnection();
 
             if (command.ExecuteNonQuery() == 1)
