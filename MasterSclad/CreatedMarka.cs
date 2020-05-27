@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AutoSclad.MasterSclad
 {
-    public partial class CreatedMarkaAndModel : Form
+    public partial class CreatedMarka : Form
     {
-        public CreatedMarkaAndModel()
+        public CreatedMarka()
         {
             InitializeComponent();
         }

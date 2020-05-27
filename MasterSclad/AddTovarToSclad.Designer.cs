@@ -31,6 +31,14 @@
             this.CloseButton = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.AddTovarToScladTapContorl = new System.Windows.Forms.TabPage();
+            this.AddTovarFormModelTovara = new System.Windows.Forms.TextBox();
+            this.AddTovarFormMarkaTovara = new System.Windows.Forms.TextBox();
+            this.AddTovarFormTypeTovar = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.AddTovarFormArtikul = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.AddTovarFormDataKonecSrok = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.AddTovarFormGlubina = new System.Windows.Forms.TextBox();
@@ -43,28 +51,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DeleteTovarToScladTapControl = new System.Windows.Forms.TabPage();
+            this.DeleteTovarFormArticul = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.DeleteTovarFormColigestvo = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.DeleteTovarFormTip = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.DeleteTovarFormNameSclad = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.DeleteTovarFormTip = new System.Windows.Forms.ComboBox();
-            this.DeleteTovarFormModel = new System.Windows.Forms.ComboBox();
-            this.DeleteTovarFormMarka = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.DeleteTovarFormColigestvo = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.DeleteTovarFormArticul = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.AddTovarFormArtikul = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.AddTovarFormTypeTovar = new System.Windows.Forms.TextBox();
-            this.AddTovarFormMarkaTovara = new System.Windows.Forms.TextBox();
-            this.AddTovarFormModelTovara = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.AddTovarToScladTapContorl.SuspendLayout();
             this.DeleteTovarToScladTapControl.SuspendLayout();
@@ -119,6 +119,72 @@
             this.AddTovarToScladTapContorl.TabIndex = 0;
             this.AddTovarToScladTapContorl.Text = "Добавление на склад товара";
             this.AddTovarToScladTapContorl.UseVisualStyleBackColor = true;
+            // 
+            // AddTovarFormModelTovara
+            // 
+            this.AddTovarFormModelTovara.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.AddTovarFormModelTovara.Location = new System.Drawing.Point(333, 87);
+            this.AddTovarFormModelTovara.Name = "AddTovarFormModelTovara";
+            this.AddTovarFormModelTovara.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormModelTovara.TabIndex = 18;
+            // 
+            // AddTovarFormMarkaTovara
+            // 
+            this.AddTovarFormMarkaTovara.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.AddTovarFormMarkaTovara.Location = new System.Drawing.Point(333, 58);
+            this.AddTovarFormMarkaTovara.Name = "AddTovarFormMarkaTovara";
+            this.AddTovarFormMarkaTovara.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormMarkaTovara.TabIndex = 17;
+            // 
+            // AddTovarFormTypeTovar
+            // 
+            this.AddTovarFormTypeTovar.Location = new System.Drawing.Point(333, 29);
+            this.AddTovarFormTypeTovar.Name = "AddTovarFormTypeTovar";
+            this.AddTovarFormTypeTovar.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormTypeTovar.TabIndex = 16;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(262, 90);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(48, 13);
+            this.label18.TabIndex = 15;
+            this.label18.Text = "Модель";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(262, 61);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(42, 13);
+            this.label17.TabIndex = 14;
+            this.label17.Text = "Марка";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(262, 32);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(26, 13);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "Тип";
+            // 
+            // AddTovarFormArtikul
+            // 
+            this.AddTovarFormArtikul.Location = new System.Drawing.Point(333, 6);
+            this.AddTovarFormArtikul.Name = "AddTovarFormArtikul";
+            this.AddTovarFormArtikul.Size = new System.Drawing.Size(100, 22);
+            this.AddTovarFormArtikul.TabIndex = 12;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(277, 9);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 13);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Артикул";
             // 
             // AddTovarFormDataKonecSrok
             // 
@@ -213,12 +279,12 @@
             // 
             // DeleteTovarToScladTapControl
             // 
+            this.DeleteTovarToScladTapControl.Controls.Add(this.textBox2);
+            this.DeleteTovarToScladTapControl.Controls.Add(this.textBox1);
             this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormArticul);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label14);
             this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormColigestvo);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label13);
-            this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormMarka);
-            this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormModel);
             this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormTip);
             this.DeleteTovarToScladTapControl.Controls.Add(this.label12);
             this.DeleteTovarToScladTapControl.Controls.Add(this.DeleteTovarFormNameSclad);
@@ -234,6 +300,55 @@
             this.DeleteTovarToScladTapControl.TabIndex = 1;
             this.DeleteTovarToScladTapControl.Text = "Списание товара";
             this.DeleteTovarToScladTapControl.UseVisualStyleBackColor = true;
+            // 
+            // DeleteTovarFormArticul
+            // 
+            this.DeleteTovarFormArticul.Location = new System.Drawing.Point(402, 92);
+            this.DeleteTovarFormArticul.Name = "DeleteTovarFormArticul";
+            this.DeleteTovarFormArticul.Size = new System.Drawing.Size(100, 22);
+            this.DeleteTovarFormArticul.TabIndex = 13;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(422, 72);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(50, 13);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Артикул";
+            // 
+            // DeleteTovarFormColigestvo
+            // 
+            this.DeleteTovarFormColigestvo.Location = new System.Drawing.Point(407, 148);
+            this.DeleteTovarFormColigestvo.Name = "DeleteTovarFormColigestvo";
+            this.DeleteTovarFormColigestvo.Size = new System.Drawing.Size(95, 22);
+            this.DeleteTovarFormColigestvo.TabIndex = 11;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(422, 132);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(69, 13);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Количество";
+            // 
+            // DeleteTovarFormTip
+            // 
+            this.DeleteTovarFormTip.FormattingEnabled = true;
+            this.DeleteTovarFormTip.Location = new System.Drawing.Point(10, 92);
+            this.DeleteTovarFormTip.Name = "DeleteTovarFormTip";
+            this.DeleteTovarFormTip.Size = new System.Drawing.Size(121, 21);
+            this.DeleteTovarFormTip.TabIndex = 7;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(163, 42);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(130, 13);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "(Тут должна быть дата)";
             // 
             // DeleteTovarFormNameSclad
             // 
@@ -288,134 +403,21 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Склад";
             // 
-            // label12
+            // textBox1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(163, 42);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(130, 13);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "(Тут должна быть дата)";
+            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBox1.Location = new System.Drawing.Point(273, 92);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 18;
             // 
-            // DeleteTovarFormTip
+            // textBox2
             // 
-            this.DeleteTovarFormTip.FormattingEnabled = true;
-            this.DeleteTovarFormTip.Location = new System.Drawing.Point(10, 92);
-            this.DeleteTovarFormTip.Name = "DeleteTovarFormTip";
-            this.DeleteTovarFormTip.Size = new System.Drawing.Size(121, 21);
-            this.DeleteTovarFormTip.TabIndex = 7;
-            // 
-            // DeleteTovarFormModel
-            // 
-            this.DeleteTovarFormModel.FormattingEnabled = true;
-            this.DeleteTovarFormModel.Location = new System.Drawing.Point(137, 92);
-            this.DeleteTovarFormModel.Name = "DeleteTovarFormModel";
-            this.DeleteTovarFormModel.Size = new System.Drawing.Size(121, 21);
-            this.DeleteTovarFormModel.TabIndex = 8;
-            // 
-            // DeleteTovarFormMarka
-            // 
-            this.DeleteTovarFormMarka.FormattingEnabled = true;
-            this.DeleteTovarFormMarka.Location = new System.Drawing.Point(264, 92);
-            this.DeleteTovarFormMarka.Name = "DeleteTovarFormMarka";
-            this.DeleteTovarFormMarka.Size = new System.Drawing.Size(121, 21);
-            this.DeleteTovarFormMarka.TabIndex = 9;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(422, 132);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 13);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "Количество";
-            // 
-            // DeleteTovarFormColigestvo
-            // 
-            this.DeleteTovarFormColigestvo.Location = new System.Drawing.Point(407, 148);
-            this.DeleteTovarFormColigestvo.Name = "DeleteTovarFormColigestvo";
-            this.DeleteTovarFormColigestvo.Size = new System.Drawing.Size(95, 22);
-            this.DeleteTovarFormColigestvo.TabIndex = 11;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(422, 72);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 13);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "Артикул";
-            // 
-            // DeleteTovarFormArticul
-            // 
-            this.DeleteTovarFormArticul.Location = new System.Drawing.Point(402, 92);
-            this.DeleteTovarFormArticul.Name = "DeleteTovarFormArticul";
-            this.DeleteTovarFormArticul.Size = new System.Drawing.Size(100, 22);
-            this.DeleteTovarFormArticul.TabIndex = 13;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(277, 9);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(50, 13);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "Артикул";
-            // 
-            // AddTovarFormArtikul
-            // 
-            this.AddTovarFormArtikul.Location = new System.Drawing.Point(333, 6);
-            this.AddTovarFormArtikul.Name = "AddTovarFormArtikul";
-            this.AddTovarFormArtikul.Size = new System.Drawing.Size(100, 22);
-            this.AddTovarFormArtikul.TabIndex = 12;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(262, 32);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(26, 13);
-            this.label16.TabIndex = 13;
-            this.label16.Text = "Тип";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(262, 61);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(42, 13);
-            this.label17.TabIndex = 14;
-            this.label17.Text = "Марка";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(262, 90);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(48, 13);
-            this.label18.TabIndex = 15;
-            this.label18.Text = "Модель";
-            // 
-            // AddTovarFormTypeTovar
-            // 
-            this.AddTovarFormTypeTovar.Location = new System.Drawing.Point(333, 29);
-            this.AddTovarFormTypeTovar.Name = "AddTovarFormTypeTovar";
-            this.AddTovarFormTypeTovar.Size = new System.Drawing.Size(100, 22);
-            this.AddTovarFormTypeTovar.TabIndex = 16;
-            // 
-            // AddTovarFormMarkaTovara
-            // 
-            this.AddTovarFormMarkaTovara.Location = new System.Drawing.Point(333, 58);
-            this.AddTovarFormMarkaTovara.Name = "AddTovarFormMarkaTovara";
-            this.AddTovarFormMarkaTovara.Size = new System.Drawing.Size(100, 22);
-            this.AddTovarFormMarkaTovara.TabIndex = 17;
-            // 
-            // AddTovarFormModelTovara
-            // 
-            this.AddTovarFormModelTovara.Location = new System.Drawing.Point(333, 87);
-            this.AddTovarFormModelTovara.Name = "AddTovarFormModelTovara";
-            this.AddTovarFormModelTovara.Size = new System.Drawing.Size(100, 22);
-            this.AddTovarFormModelTovara.TabIndex = 18;
+            this.textBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBox2.Location = new System.Drawing.Point(150, 92);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 19;
             // 
             // AddTovarToSclad
             // 
@@ -466,8 +468,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox DeleteTovarFormColigestvo;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox DeleteTovarFormMarka;
-        private System.Windows.Forms.ComboBox DeleteTovarFormModel;
         private System.Windows.Forms.ComboBox DeleteTovarFormTip;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox AddTovarFormModelTovara;
@@ -478,5 +478,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox AddTovarFormArtikul;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

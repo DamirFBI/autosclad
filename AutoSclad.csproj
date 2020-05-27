@@ -120,11 +120,11 @@
     <Compile Include="MasterSclad\CallWorkmanToMaster.Designer.cs">
       <DependentUpon>CallWorkmanToMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterSclad\CreatedMarkaAndModel.cs">
+    <Compile Include="MasterSclad\CreatedMarka.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterSclad\CreatedMarkaAndModel.Designer.cs">
-      <DependentUpon>CreatedMarkaAndModel.cs</DependentUpon>
+    <Compile Include="MasterSclad\CreatedMarka.Designer.cs">
+      <DependentUpon>CreatedMarka.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterSclad\MasterWork.cs">
       <SubType>Form</SubType>
@@ -191,8 +191,8 @@
     <EmbeddedResource Include="MasterSclad\CallWorkmanToMaster.resx">
       <DependentUpon>CallWorkmanToMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\CreatedMarkaAndModel.resx">
-      <DependentUpon>CreatedMarkaAndModel.cs</DependentUpon>
+    <EmbeddedResource Include="MasterSclad\CreatedMarka.resx">
+      <DependentUpon>CreatedMarka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\MasterWork.resx">
       <DependentUpon>MasterWork.cs</DependentUpon>

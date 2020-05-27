@@ -1,6 +1,6 @@
 ﻿namespace AutoSclad.MasterSclad
 {
-    partial class CreatedMarkaAndModel
+    partial class CreatedMarka
     {
         /// <summary>
         /// Required designer variable.
