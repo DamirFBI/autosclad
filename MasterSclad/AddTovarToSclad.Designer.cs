@@ -32,7 +32,6 @@
             this.CloseButton = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.AddTovarToScladTapContorl = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.AddTovarFormModelTovara = new System.Windows.Forms.TextBox();
@@ -67,10 +66,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.AddPostavhikOpenForm = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.AddTovarToScladTapContorl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.DeleteTovarToScladTapControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AddPostavhikOpenForm)).BeginInit();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -96,7 +96,7 @@
             // 
             // AddTovarToScladTapContorl
             // 
-            this.AddTovarToScladTapContorl.Controls.Add(this.pictureBox1);
+            this.AddTovarToScladTapContorl.Controls.Add(this.AddPostavhikOpenForm);
             this.AddTovarToScladTapContorl.Controls.Add(this.comboBox1);
             this.AddTovarToScladTapContorl.Controls.Add(this.label16);
             this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormModelTovara);
@@ -123,19 +123,6 @@
             this.AddTovarToScladTapContorl.TabIndex = 0;
             this.AddTovarToScladTapContorl.Text = "Добавление на склад товара";
             this.AddTovarToScladTapContorl.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(476, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(17, 15);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // comboBox1
             // 
@@ -438,6 +425,20 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Склад";
             // 
+            // AddPostavhikOpenForm
+            // 
+            this.AddPostavhikOpenForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.AddPostavhikOpenForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AddPostavhikOpenForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddPostavhikOpenForm.Image = ((System.Drawing.Image)(resources.GetObject("AddPostavhikOpenForm.Image")));
+            this.AddPostavhikOpenForm.Location = new System.Drawing.Point(476, 9);
+            this.AddPostavhikOpenForm.Name = "AddPostavhikOpenForm";
+            this.AddPostavhikOpenForm.Size = new System.Drawing.Size(17, 15);
+            this.AddPostavhikOpenForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AddPostavhikOpenForm.TabIndex = 21;
+            this.AddPostavhikOpenForm.TabStop = false;
+            this.AddPostavhikOpenForm.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // AddTovarToSclad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,9 +454,9 @@
             this.tabControl1.ResumeLayout(false);
             this.AddTovarToScladTapContorl.ResumeLayout(false);
             this.AddTovarToScladTapContorl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.DeleteTovarToScladTapControl.ResumeLayout(false);
             this.DeleteTovarToScladTapControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AddPostavhikOpenForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,6 +501,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox AddPostavhikOpenForm;
     }
 }

@@ -28,67 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.treeViewMarka = new System.Windows.Forms.TreeView();
+            this.AddMarkaToAddMarka = new System.Windows.Forms.Button();
+            this.DeleteMarkaToAddMarka = new System.Windows.Forms.Button();
+            this.EditMarkaToAddMarka = new System.Windows.Forms.Button();
+            this.SelectMarkaToAddMarka = new System.Windows.Forms.Button();
+            this.CloseForm = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.SearchAddMarkaForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // treeView1
+            // treeViewMarka
             // 
-            this.treeView1.Location = new System.Drawing.Point(12, 54);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(306, 264);
-            this.treeView1.TabIndex = 0;
+            this.treeViewMarka.Location = new System.Drawing.Point(12, 54);
+            this.treeViewMarka.Name = "treeViewMarka";
+            this.treeViewMarka.Size = new System.Drawing.Size(306, 264);
+            this.treeViewMarka.TabIndex = 0;
             // 
-            // button1
+            // AddMarkaToAddMarka
             // 
-            this.button1.Location = new System.Drawing.Point(324, 83);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AddMarkaToAddMarka.Location = new System.Drawing.Point(324, 83);
+            this.AddMarkaToAddMarka.Name = "AddMarkaToAddMarka";
+            this.AddMarkaToAddMarka.Size = new System.Drawing.Size(75, 23);
+            this.AddMarkaToAddMarka.TabIndex = 1;
+            this.AddMarkaToAddMarka.Text = "Добавить";
+            this.AddMarkaToAddMarka.UseVisualStyleBackColor = true;
+            this.AddMarkaToAddMarka.Click += new System.EventHandler(this.AddMarkaToAddMarka_Click);
             // 
-            // button2
+            // DeleteMarkaToAddMarka
             // 
-            this.button2.Location = new System.Drawing.Point(324, 141);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Удалить";
-            this.button2.UseVisualStyleBackColor = true;
+            this.DeleteMarkaToAddMarka.Location = new System.Drawing.Point(324, 141);
+            this.DeleteMarkaToAddMarka.Name = "DeleteMarkaToAddMarka";
+            this.DeleteMarkaToAddMarka.Size = new System.Drawing.Size(75, 23);
+            this.DeleteMarkaToAddMarka.TabIndex = 2;
+            this.DeleteMarkaToAddMarka.Text = "Удалить";
+            this.DeleteMarkaToAddMarka.UseVisualStyleBackColor = true;
+            this.DeleteMarkaToAddMarka.Click += new System.EventHandler(this.DeleteMarkaToAddMarka_Click);
             // 
-            // button3
+            // EditMarkaToAddMarka
             // 
-            this.button3.Location = new System.Drawing.Point(324, 112);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Изменить";
-            this.button3.UseVisualStyleBackColor = true;
+            this.EditMarkaToAddMarka.Location = new System.Drawing.Point(324, 112);
+            this.EditMarkaToAddMarka.Name = "EditMarkaToAddMarka";
+            this.EditMarkaToAddMarka.Size = new System.Drawing.Size(75, 23);
+            this.EditMarkaToAddMarka.TabIndex = 3;
+            this.EditMarkaToAddMarka.Text = "Изменить";
+            this.EditMarkaToAddMarka.UseVisualStyleBackColor = true;
+            this.EditMarkaToAddMarka.Click += new System.EventHandler(this.EditMarkaToAddMarka_Click);
             // 
-            // button4
+            // SelectMarkaToAddMarka
             // 
-            this.button4.Location = new System.Drawing.Point(57, 324);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(207, 44);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Выбрать";
-            this.button4.UseVisualStyleBackColor = true;
+            this.SelectMarkaToAddMarka.Location = new System.Drawing.Point(57, 324);
+            this.SelectMarkaToAddMarka.Name = "SelectMarkaToAddMarka";
+            this.SelectMarkaToAddMarka.Size = new System.Drawing.Size(207, 44);
+            this.SelectMarkaToAddMarka.TabIndex = 4;
+            this.SelectMarkaToAddMarka.Text = "Выбрать";
+            this.SelectMarkaToAddMarka.UseVisualStyleBackColor = true;
+            this.SelectMarkaToAddMarka.Click += new System.EventHandler(this.SelectMarkaToAddMarka_Click);
             // 
-            // button5
+            // CloseForm
             // 
-            this.button5.Location = new System.Drawing.Point(352, 354);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Закрыть";
-            this.button5.UseVisualStyleBackColor = true;
+            this.CloseForm.Location = new System.Drawing.Point(352, 354);
+            this.CloseForm.Name = "CloseForm";
+            this.CloseForm.Size = new System.Drawing.Size(75, 23);
+            this.CloseForm.TabIndex = 5;
+            this.CloseForm.Text = "Закрыть";
+            this.CloseForm.UseVisualStyleBackColor = true;
+            this.CloseForm.Click += new System.EventHandler(this.CloseForm_Click);
             // 
             // label1
             // 
@@ -100,31 +105,34 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Настройка марки товара";
             // 
-            // button6
+            // SearchAddMarkaForm
             // 
-            this.button6.Location = new System.Drawing.Point(325, 54);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Найти";
-            this.button6.UseVisualStyleBackColor = true;
+            this.SearchAddMarkaForm.Location = new System.Drawing.Point(325, 54);
+            this.SearchAddMarkaForm.Name = "SearchAddMarkaForm";
+            this.SearchAddMarkaForm.Size = new System.Drawing.Size(75, 23);
+            this.SearchAddMarkaForm.TabIndex = 7;
+            this.SearchAddMarkaForm.Text = "Найти";
+            this.SearchAddMarkaForm.UseVisualStyleBackColor = true;
+            this.SearchAddMarkaForm.Click += new System.EventHandler(this.button6_Click);
             // 
-            // CreatedMarkaAndModel
+            // CreatedMarka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 389);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.SearchAddMarkaForm);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.CloseForm);
+            this.Controls.Add(this.SelectMarkaToAddMarka);
+            this.Controls.Add(this.EditMarkaToAddMarka);
+            this.Controls.Add(this.DeleteMarkaToAddMarka);
+            this.Controls.Add(this.AddMarkaToAddMarka);
+            this.Controls.Add(this.treeViewMarka);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CreatedMarkaAndModel";
+            this.Name = "CreatedMarka";
             this.Text = "CreatedMarkaAndModel";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CreatedMarka_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CreatedMarka_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,13 +140,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TreeView treeViewMarka;
+        private System.Windows.Forms.Button AddMarkaToAddMarka;
+        private System.Windows.Forms.Button DeleteMarkaToAddMarka;
+        private System.Windows.Forms.Button EditMarkaToAddMarka;
+        private System.Windows.Forms.Button SelectMarkaToAddMarka;
+        private System.Windows.Forms.Button CloseForm;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button SearchAddMarkaForm;
     }
 }

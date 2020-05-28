@@ -48,5 +48,10 @@ namespace AutoSclad.MasterSclad
             DeleteYesNo deleteYesNoScladOpenDialog = new DeleteYesNo();
             deleteYesNoScladOpenDialog.ShowDialog();
         }
+
+        private void Sclad_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Postavhik = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AdressPostavhik = new System.Windows.Forms.TextBox();
+            this.TelefonPostavhik = new System.Windows.Forms.TextBox();
+            this.EmailPostavhik = new System.Windows.Forms.TextBox();
+            this.AddPostavhik = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -58,12 +58,12 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Адрес";
             // 
-            // textBox1
+            // Postavhik
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(278, 22);
-            this.textBox1.TabIndex = 2;
+            this.Postavhik.Location = new System.Drawing.Point(16, 30);
+            this.Postavhik.Name = "Postavhik";
+            this.Postavhik.Size = new System.Drawing.Size(278, 22);
+            this.Postavhik.TabIndex = 2;
             // 
             // label3
             // 
@@ -83,35 +83,36 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Электронный сайт";
             // 
-            // textBox2
+            // AdressPostavhik
             // 
-            this.textBox2.Location = new System.Drawing.Point(16, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(278, 22);
-            this.textBox2.TabIndex = 5;
+            this.AdressPostavhik.Location = new System.Drawing.Point(16, 82);
+            this.AdressPostavhik.Name = "AdressPostavhik";
+            this.AdressPostavhik.Size = new System.Drawing.Size(278, 22);
+            this.AdressPostavhik.TabIndex = 5;
             // 
-            // textBox3
+            // TelefonPostavhik
             // 
-            this.textBox3.Location = new System.Drawing.Point(16, 135);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(278, 22);
-            this.textBox3.TabIndex = 6;
+            this.TelefonPostavhik.Location = new System.Drawing.Point(16, 135);
+            this.TelefonPostavhik.Name = "TelefonPostavhik";
+            this.TelefonPostavhik.Size = new System.Drawing.Size(278, 22);
+            this.TelefonPostavhik.TabIndex = 6;
             // 
-            // textBox4
+            // EmailPostavhik
             // 
-            this.textBox4.Location = new System.Drawing.Point(16, 193);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(278, 22);
-            this.textBox4.TabIndex = 7;
+            this.EmailPostavhik.Location = new System.Drawing.Point(16, 193);
+            this.EmailPostavhik.Name = "EmailPostavhik";
+            this.EmailPostavhik.Size = new System.Drawing.Size(278, 22);
+            this.EmailPostavhik.TabIndex = 7;
             // 
-            // button1
+            // AddPostavhik
             // 
-            this.button1.Location = new System.Drawing.Point(27, 254);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AddPostavhik.Location = new System.Drawing.Point(27, 254);
+            this.AddPostavhik.Name = "AddPostavhik";
+            this.AddPostavhik.Size = new System.Drawing.Size(75, 23);
+            this.AddPostavhik.TabIndex = 8;
+            this.AddPostavhik.Text = "Добавить";
+            this.AddPostavhik.UseVisualStyleBackColor = true;
+            this.AddPostavhik.Click += new System.EventHandler(this.AddPostavhik_Click);
             // 
             // button2
             // 
@@ -121,25 +122,30 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Закрыть";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // AddPostovhick
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(306, 302);
+            this.ClientSize = new System.Drawing.Size(305, 290);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.AddPostavhik);
+            this.Controls.Add(this.EmailPostavhik);
+            this.Controls.Add(this.TelefonPostavhik);
+            this.Controls.Add(this.AdressPostavhik);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Postavhik);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(305, 290);
+            this.MinimumSize = new System.Drawing.Size(305, 290);
             this.Name = "AddPostovhick";
             this.Text = "AddPostovhick";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AddPostovhick_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AddPostovhick_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,13 +155,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Postavhik;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox AdressPostavhik;
+        private System.Windows.Forms.TextBox TelefonPostavhik;
+        private System.Windows.Forms.TextBox EmailPostavhik;
+        private System.Windows.Forms.Button AddPostavhik;
         private System.Windows.Forms.Button button2;
     }
 }
