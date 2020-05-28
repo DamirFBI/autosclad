@@ -41,5 +41,11 @@ namespace AutoSclad.MasterSclad
         {
             lastPoint = new Point(e.X, e.Y);    //Закрепляет позицию после перемещения
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            AddPostovhick addPostovhickOpenForm = new AddPostovhick();
+            addPostovhickOpenForm.ShowDialog();
+        }
     }
 }

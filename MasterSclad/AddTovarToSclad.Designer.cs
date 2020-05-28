@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTovarToSclad));
             this.CloseButton = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.AddTovarToScladTapContorl = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.AddTovarFormModelTovara = new System.Windows.Forms.TextBox();
             this.AddTovarFormMarkaTovara = new System.Windows.Forms.TextBox();
-            this.AddTovarFormTypeTovar = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.AddTovarFormArtikul = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.AddTovarFormDataKonecSrok = new System.Windows.Forms.DateTimePicker();
@@ -51,6 +53,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DeleteTovarToScladTapControl = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.DeleteTovarFormArticul = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.DeleteTovarFormColigestvo = new System.Windows.Forms.TextBox();
@@ -63,10 +67,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.AddTovarToScladTapContorl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.DeleteTovarToScladTapControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,12 +96,13 @@
             // 
             // AddTovarToScladTapContorl
             // 
+            this.AddTovarToScladTapContorl.Controls.Add(this.pictureBox1);
+            this.AddTovarToScladTapContorl.Controls.Add(this.comboBox1);
+            this.AddTovarToScladTapContorl.Controls.Add(this.label16);
             this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormModelTovara);
             this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormMarkaTovara);
-            this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormTypeTovar);
             this.AddTovarToScladTapContorl.Controls.Add(this.label18);
             this.AddTovarToScladTapContorl.Controls.Add(this.label17);
-            this.AddTovarToScladTapContorl.Controls.Add(this.label16);
             this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormArtikul);
             this.AddTovarToScladTapContorl.Controls.Add(this.label15);
             this.AddTovarToScladTapContorl.Controls.Add(this.AddTovarFormDataKonecSrok);
@@ -120,6 +124,37 @@
             this.AddTovarToScladTapContorl.Text = "Добавление на склад товара";
             this.AddTovarToScladTapContorl.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(476, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(17, 15);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(349, 6);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 20;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(277, 9);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(66, 13);
+            this.label16.TabIndex = 19;
+            this.label16.Text = "Поставщик";
+            // 
             // AddTovarFormModelTovara
             // 
             this.AddTovarFormModelTovara.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -135,13 +170,6 @@
             this.AddTovarFormMarkaTovara.Name = "AddTovarFormMarkaTovara";
             this.AddTovarFormMarkaTovara.Size = new System.Drawing.Size(100, 22);
             this.AddTovarFormMarkaTovara.TabIndex = 17;
-            // 
-            // AddTovarFormTypeTovar
-            // 
-            this.AddTovarFormTypeTovar.Location = new System.Drawing.Point(333, 29);
-            this.AddTovarFormTypeTovar.Name = "AddTovarFormTypeTovar";
-            this.AddTovarFormTypeTovar.Size = new System.Drawing.Size(100, 22);
-            this.AddTovarFormTypeTovar.TabIndex = 16;
             // 
             // label18
             // 
@@ -161,18 +189,9 @@
             this.label17.TabIndex = 14;
             this.label17.Text = "Марка";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(262, 32);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(26, 13);
-            this.label16.TabIndex = 13;
-            this.label16.Text = "Тип";
-            // 
             // AddTovarFormArtikul
             // 
-            this.AddTovarFormArtikul.Location = new System.Drawing.Point(333, 6);
+            this.AddTovarFormArtikul.Location = new System.Drawing.Point(333, 29);
             this.AddTovarFormArtikul.Name = "AddTovarFormArtikul";
             this.AddTovarFormArtikul.Size = new System.Drawing.Size(100, 22);
             this.AddTovarFormArtikul.TabIndex = 12;
@@ -180,7 +199,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(277, 9);
+            this.label15.Location = new System.Drawing.Point(260, 32);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(50, 13);
             this.label15.TabIndex = 11;
@@ -301,6 +320,22 @@
             this.DeleteTovarToScladTapControl.Text = "Списание товара";
             this.DeleteTovarToScladTapControl.UseVisualStyleBackColor = true;
             // 
+            // textBox2
+            // 
+            this.textBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBox2.Location = new System.Drawing.Point(150, 92);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 19;
+            // 
+            // textBox1
+            // 
+            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBox1.Location = new System.Drawing.Point(273, 92);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 18;
+            // 
             // DeleteTovarFormArticul
             // 
             this.DeleteTovarFormArticul.Location = new System.Drawing.Point(402, 92);
@@ -403,22 +438,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Склад";
             // 
-            // textBox1
-            // 
-            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.textBox1.Location = new System.Drawing.Point(273, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 18;
-            // 
-            // textBox2
-            // 
-            this.textBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.textBox2.Location = new System.Drawing.Point(150, 92);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 19;
-            // 
             // AddTovarToSclad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -434,6 +453,7 @@
             this.tabControl1.ResumeLayout(false);
             this.AddTovarToScladTapContorl.ResumeLayout(false);
             this.AddTovarToScladTapContorl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.DeleteTovarToScladTapControl.ResumeLayout(false);
             this.DeleteTovarToScladTapControl.PerformLayout();
             this.ResumeLayout(false);
@@ -472,13 +492,14 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox AddTovarFormModelTovara;
         private System.Windows.Forms.TextBox AddTovarFormMarkaTovara;
-        private System.Windows.Forms.TextBox AddTovarFormTypeTovar;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox AddTovarFormArtikul;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
