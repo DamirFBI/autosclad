@@ -39,7 +39,6 @@ namespace AutoSclad.ServiceDialog
 
         public void YesDeleteButton_Click(object sender, EventArgs e)
         {
-            Boolean YesDelete = true;
         }
     }
 }
