@@ -35,11 +35,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.SelectTab = new System.Windows.Forms.Button();
             this.CreatedScladButton = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ZonaExpiditionAdd = new System.Windows.Forms.TextBox();
+            this.RazmerScladaAdd = new System.Windows.Forms.TextBox();
+            this.TelefonScladAdd = new System.Windows.Forms.TextBox();
+            this.ArdessScladAdd = new System.Windows.Forms.TextBox();
+            this.NameScladAdd = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -120,11 +120,11 @@
             this.CreatedSclad.Controls.Add(this.label6);
             this.CreatedSclad.Controls.Add(this.SelectTab);
             this.CreatedSclad.Controls.Add(this.CreatedScladButton);
-            this.CreatedSclad.Controls.Add(this.textBox5);
-            this.CreatedSclad.Controls.Add(this.textBox4);
-            this.CreatedSclad.Controls.Add(this.textBox3);
-            this.CreatedSclad.Controls.Add(this.textBox2);
-            this.CreatedSclad.Controls.Add(this.textBox1);
+            this.CreatedSclad.Controls.Add(this.ZonaExpiditionAdd);
+            this.CreatedSclad.Controls.Add(this.RazmerScladaAdd);
+            this.CreatedSclad.Controls.Add(this.TelefonScladAdd);
+            this.CreatedSclad.Controls.Add(this.ArdessScladAdd);
+            this.CreatedSclad.Controls.Add(this.NameScladAdd);
             this.CreatedSclad.Controls.Add(this.label5);
             this.CreatedSclad.Controls.Add(this.label4);
             this.CreatedSclad.Controls.Add(this.label3);
@@ -173,41 +173,42 @@
             this.CreatedScladButton.TabIndex = 10;
             this.CreatedScladButton.Text = "Добавить";
             this.CreatedScladButton.UseVisualStyleBackColor = true;
+            this.CreatedScladButton.Click += new System.EventHandler(this.CreatedScladButton_Click);
             // 
-            // textBox5
+            // ZonaExpiditionAdd
             // 
-            this.textBox5.Location = new System.Drawing.Point(154, 161);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 9;
+            this.ZonaExpiditionAdd.Location = new System.Drawing.Point(154, 161);
+            this.ZonaExpiditionAdd.Name = "ZonaExpiditionAdd";
+            this.ZonaExpiditionAdd.Size = new System.Drawing.Size(100, 22);
+            this.ZonaExpiditionAdd.TabIndex = 9;
             // 
-            // textBox4
+            // RazmerScladaAdd
             // 
-            this.textBox4.Location = new System.Drawing.Point(154, 120);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 8;
+            this.RazmerScladaAdd.Location = new System.Drawing.Point(154, 120);
+            this.RazmerScladaAdd.Name = "RazmerScladaAdd";
+            this.RazmerScladaAdd.Size = new System.Drawing.Size(100, 22);
+            this.RazmerScladaAdd.TabIndex = 8;
             // 
-            // textBox3
+            // TelefonScladAdd
             // 
-            this.textBox3.Location = new System.Drawing.Point(154, 82);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 7;
+            this.TelefonScladAdd.Location = new System.Drawing.Point(154, 82);
+            this.TelefonScladAdd.Name = "TelefonScladAdd";
+            this.TelefonScladAdd.Size = new System.Drawing.Size(100, 22);
+            this.TelefonScladAdd.TabIndex = 7;
             // 
-            // textBox2
+            // ArdessScladAdd
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 6;
+            this.ArdessScladAdd.Location = new System.Drawing.Point(154, 47);
+            this.ArdessScladAdd.Name = "ArdessScladAdd";
+            this.ArdessScladAdd.Size = new System.Drawing.Size(100, 22);
+            this.ArdessScladAdd.TabIndex = 6;
             // 
-            // textBox1
+            // NameScladAdd
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 5;
+            this.NameScladAdd.Location = new System.Drawing.Point(154, 13);
+            this.NameScladAdd.Name = "NameScladAdd";
+            this.NameScladAdd.Size = new System.Drawing.Size(100, 22);
+            this.NameScladAdd.TabIndex = 5;
             // 
             // label5
             // 
@@ -648,11 +649,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button SelectTab;
         private System.Windows.Forms.Button CreatedScladButton;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ZonaExpiditionAdd;
+        private System.Windows.Forms.TextBox RazmerScladaAdd;
+        private System.Windows.Forms.TextBox TelefonScladAdd;
+        private System.Windows.Forms.TextBox ArdessScladAdd;
+        private System.Windows.Forms.TextBox NameScladAdd;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

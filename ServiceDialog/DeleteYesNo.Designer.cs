@@ -42,6 +42,7 @@
             this.YesDeleteButton.TabIndex = 0;
             this.YesDeleteButton.Text = "Да";
             this.YesDeleteButton.UseVisualStyleBackColor = true;
+            this.YesDeleteButton.Click += new System.EventHandler(this.YesDeleteButton_Click);
             // 
             // label1
             // 
