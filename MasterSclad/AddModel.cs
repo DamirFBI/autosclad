@@ -57,6 +57,7 @@ namespace AutoSclad.MasterSclad
             MySqlCommand command = new MySqlCommand("INSERT INTO `model` ( `Model`, `Opisanie`) VALUES (@Model, @Opisanie)", db.getconnection());
             command.Parameters.Add("@Model", MySqlDbType.VarChar).Value = textBox2.Text;
             command.Parameters.Add("@Opisanie", MySqlDbType.VarChar).Value = textBox1.Text;
+            command.Parameters.Add("@Opisanie", MySqlDbType.VarChar).Value = MarkaToFiormAddModel.Text;
 
             db.openconnection();
 
