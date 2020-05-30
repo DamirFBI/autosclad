@@ -50,7 +50,8 @@ namespace AutoSclad.MasterSclad
 
         private void EditMarkaToAddMarka_Click(object sender, EventArgs e)
         {
-
+            EditMarka editMarkaOpenForm = new EditMarka();
+            editMarkaOpenForm.ShowDialog();
         }
 
         private void AddMarkaToAddMarka_Click(object sender, EventArgs e)

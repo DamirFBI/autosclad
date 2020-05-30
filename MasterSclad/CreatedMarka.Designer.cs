@@ -99,11 +99,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(12, 14);
+            this.label1.Location = new System.Drawing.Point(70, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 35);
+            this.label1.Size = new System.Drawing.Size(182, 35);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Настройка марки товара";
+            this.label1.Text = "Марки товара";
             // 
             // SearchAddMarkaForm
             // 
