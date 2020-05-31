@@ -79,7 +79,7 @@
             // 
             this.CloseCallToSclad.AutoSize = true;
             this.CloseCallToSclad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CloseCallToSclad.Location = new System.Drawing.Point(564, 298);
+            this.CloseCallToSclad.Location = new System.Drawing.Point(426, 298);
             this.CloseCallToSclad.Name = "CloseCallToSclad";
             this.CloseCallToSclad.Size = new System.Drawing.Size(41, 13);
             this.CloseCallToSclad.TabIndex = 10;
@@ -94,7 +94,7 @@
             // 
             // SformirovatZapros
             // 
-            this.SformirovatZapros.Location = new System.Drawing.Point(244, 198);
+            this.SformirovatZapros.Location = new System.Drawing.Point(224, 167);
             this.SformirovatZapros.Name = "SformirovatZapros";
             this.SformirovatZapros.Size = new System.Drawing.Size(243, 23);
             this.SformirovatZapros.TabIndex = 12;
@@ -113,6 +113,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.textBox2.Location = new System.Drawing.Point(224, 37);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(115, 22);
@@ -120,6 +121,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.textBox3.Location = new System.Drawing.Point(224, 80);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(115, 22);
@@ -129,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 320);
+            this.ClientSize = new System.Drawing.Size(500, 320);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label6);
@@ -141,8 +143,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(620, 320);
-            this.MinimumSize = new System.Drawing.Size(620, 320);
+            this.MaximumSize = new System.Drawing.Size(500, 320);
+            this.MinimumSize = new System.Drawing.Size(500, 320);
             this.Name = "CallToSclad";
             this.Text = "CallToSclad";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CallToSclad_MouseDown);

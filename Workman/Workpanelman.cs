@@ -28,7 +28,7 @@ namespace AutoSclad.Workman
         private void button1_Click(object sender, EventArgs e)
         {
             CallToSclad callToSclad = new CallToSclad();
-            callToSclad.ShowDialog();
+            callToSclad.Show();
         }
         Point lastPoint;
         private void Workpanelman_MouseMove(object sender, MouseEventArgs e)
