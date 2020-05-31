@@ -85,6 +85,7 @@
             this.EditModel.TabIndex = 4;
             this.EditModel.Text = "Изменить";
             this.EditModel.UseVisualStyleBackColor = true;
+            this.EditModel.Click += new System.EventHandler(this.EditModel_Click);
             // 
             // DeleteModel
             // 

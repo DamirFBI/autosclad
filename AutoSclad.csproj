@@ -156,6 +156,12 @@
     <Compile Include="MasterSclad\EditMarka.Designer.cs">
       <DependentUpon>EditMarka.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasterSclad\EditModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSclad\EditModel.Designer.cs">
+      <DependentUpon>EditModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="MasterSclad\MasterWork.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\EditMarka.resx">
       <DependentUpon>EditMarka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSclad\EditModel.resx">
+      <DependentUpon>EditModel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\MasterWork.resx">
       <DependentUpon>MasterWork.cs</DependentUpon>

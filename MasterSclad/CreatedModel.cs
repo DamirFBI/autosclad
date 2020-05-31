@@ -36,5 +36,11 @@ namespace AutoSclad.MasterSclad
         {
 
         }
+
+        private void EditModel_Click(object sender, EventArgs e)
+        {
+            EditModel EditModelOpenForm = new EditModel();
+            EditModelOpenForm.ShowDialog();
+        }
     }
 }
