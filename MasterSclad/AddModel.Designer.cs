@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Модель";
             // 
@@ -59,7 +59,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(16, 30);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 22);
+            this.textBox2.Size = new System.Drawing.Size(216, 20);
             this.textBox2.TabIndex = 2;
             // 
             // label2
@@ -67,7 +67,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(16, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Подробности";
             // 
@@ -98,7 +98,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(256, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Марка";
             // 
@@ -107,8 +107,9 @@
             this.MarkaToFiormAddModel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.MarkaToFiormAddModel.Location = new System.Drawing.Point(259, 30);
             this.MarkaToFiormAddModel.Name = "MarkaToFiormAddModel";
-            this.MarkaToFiormAddModel.Size = new System.Drawing.Size(233, 22);
+            this.MarkaToFiormAddModel.Size = new System.Drawing.Size(233, 20);
             this.MarkaToFiormAddModel.TabIndex = 7;
+            this.MarkaToFiormAddModel.TextChanged += new System.EventHandler(this.MarkaToFiormAddModel_TextChanged);
             // 
             // AddModel
             // 

@@ -152,7 +152,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(255, 164);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(16, 13);
+            this.label6.Size = new System.Drawing.Size(15, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "%";
             // 
@@ -179,35 +179,35 @@
             // 
             this.ZonaExpiditionAdd.Location = new System.Drawing.Point(154, 161);
             this.ZonaExpiditionAdd.Name = "ZonaExpiditionAdd";
-            this.ZonaExpiditionAdd.Size = new System.Drawing.Size(100, 22);
+            this.ZonaExpiditionAdd.Size = new System.Drawing.Size(100, 20);
             this.ZonaExpiditionAdd.TabIndex = 9;
             // 
             // RazmerScladaAdd
             // 
             this.RazmerScladaAdd.Location = new System.Drawing.Point(154, 120);
             this.RazmerScladaAdd.Name = "RazmerScladaAdd";
-            this.RazmerScladaAdd.Size = new System.Drawing.Size(100, 22);
+            this.RazmerScladaAdd.Size = new System.Drawing.Size(100, 20);
             this.RazmerScladaAdd.TabIndex = 8;
             // 
             // TelefonScladAdd
             // 
             this.TelefonScladAdd.Location = new System.Drawing.Point(154, 82);
             this.TelefonScladAdd.Name = "TelefonScladAdd";
-            this.TelefonScladAdd.Size = new System.Drawing.Size(100, 22);
+            this.TelefonScladAdd.Size = new System.Drawing.Size(100, 20);
             this.TelefonScladAdd.TabIndex = 7;
             // 
             // ArdessScladAdd
             // 
             this.ArdessScladAdd.Location = new System.Drawing.Point(154, 47);
             this.ArdessScladAdd.Name = "ArdessScladAdd";
-            this.ArdessScladAdd.Size = new System.Drawing.Size(100, 22);
+            this.ArdessScladAdd.Size = new System.Drawing.Size(100, 20);
             this.ArdessScladAdd.TabIndex = 6;
             // 
             // NameScladAdd
             // 
             this.NameScladAdd.Location = new System.Drawing.Point(154, 13);
             this.NameScladAdd.Name = "NameScladAdd";
-            this.NameScladAdd.Size = new System.Drawing.Size(100, 22);
+            this.NameScladAdd.Size = new System.Drawing.Size(100, 20);
             this.NameScladAdd.TabIndex = 5;
             // 
             // label5
@@ -215,7 +215,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(7, 164);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 13);
+            this.label5.Size = new System.Drawing.Size(141, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Размер зоны экспедиции ";
             // 
@@ -224,7 +224,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 123);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 13);
+            this.label4.Size = new System.Drawing.Size(85, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Размер склада";
             // 
@@ -251,7 +251,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Наиминование";
             // 
@@ -331,7 +331,7 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(170, 46);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 22);
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
             this.textBox9.TabIndex = 9;
             // 
             // textBox8
@@ -339,21 +339,21 @@
             this.textBox8.Location = new System.Drawing.Point(170, 156);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 22);
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 8;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(170, 117);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 7;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(170, 79);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 6;
             // 
             // label13
@@ -361,7 +361,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(114, 159);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(51, 13);
+            this.label13.Size = new System.Drawing.Size(48, 13);
             this.label13.TabIndex = 5;
             this.label13.Text = "Глубина";
             // 
@@ -370,7 +370,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(113, 120);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 13);
+            this.label12.Size = new System.Drawing.Size(46, 13);
             this.label12.TabIndex = 4;
             this.label12.Text = "Ширина";
             // 
@@ -388,7 +388,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(10, 79);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 13);
+            this.label10.Size = new System.Drawing.Size(103, 13);
             this.label10.TabIndex = 2;
             this.label10.Text = "Размер стелажа м";
             // 
@@ -397,7 +397,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(10, 46);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(123, 13);
+            this.label9.Size = new System.Drawing.Size(120, 13);
             this.label9.TabIndex = 1;
             this.label9.Text = "Название зоны от A-Z";
             // 
@@ -453,6 +453,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "Распечатать штрихкод";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tabControl2
             // 
@@ -498,7 +499,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(129, 4);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(46, 13);
+            this.label15.Size = new System.Drawing.Size(45, 13);
             this.label15.TabIndex = 1;
             this.label15.Text = "Стелаж";
             // 
@@ -546,7 +547,7 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(3, 13);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(127, 13);
+            this.label16.Size = new System.Drawing.Size(122, 13);
             this.label16.TabIndex = 0;
             this.label16.Text = "Наиминование склада";
             // 
@@ -576,7 +577,7 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(31, 85);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(46, 13);
+            this.label17.Size = new System.Drawing.Size(45, 13);
             this.label17.TabIndex = 3;
             this.label17.Text = "Стелаж";
             // 

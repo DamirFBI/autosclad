@@ -9,16 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using MaterialSkin.Controls;
 
 namespace AutoSclad.MasterSclad
 {
-    public partial class Sclad : Form
+    public partial class ScladForm : MaterialForm
     {
-        public Sclad()
+        public ScladForm()
         {
             InitializeComponent();
         }
+
         Point lastPoint;
+
         private void Sclad_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left) //Если пользователь зажал левой кнопкой по окну, то он может передвигать окно.
@@ -53,12 +56,22 @@ namespace AutoSclad.MasterSclad
 
         private void Sclad_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "autoScladDataSet.sklad". При необходимости она может быть перемещена или удалена.
+            this.skladTableAdapter.Fill(this.autoScladDataSet.sklad);
 
         }
 
         private void CreatedScladButton_Click(object sender, EventArgs e)
         {
-            Dibi db = new Dibi();
+            
+           
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            skladBindingSource.EndEdit();
+            /*Dibi db = new Dibi();
             MySqlCommand command = new MySqlCommand("INSERT INTO `Sclad` ( `NameSclad`, `Adress`, `Telefon`, `RazmerSclada`, `RazmerExpidition`) VALUES (@NameSclad, @Adress, @Telefon, @RazmerSclada, @RazmerExpidition)", db.getconnection());
             command.Parameters.Add("@NameSclad", MySqlDbType.VarChar).Value = NameScladAdd.Text;
             command.Parameters.Add("@Adress", MySqlDbType.VarChar).Value = ArdessScladAdd.Text;
@@ -75,12 +88,15 @@ namespace AutoSclad.MasterSclad
             else
                 MessageBox.Show("Склад не был создан");
 
-            db.closeconnection();
-           
+            db.closeconnection();*/
+        }
+
+        private void SelectTab_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

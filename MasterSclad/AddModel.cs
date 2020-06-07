@@ -94,6 +94,11 @@ namespace AutoSclad.MasterSclad
                 return false;
 
         }
+
+        private void MarkaToFiormAddModel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
