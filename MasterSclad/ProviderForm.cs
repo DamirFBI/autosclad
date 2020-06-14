@@ -13,12 +13,12 @@ using MaterialSkin.Controls;
 
 namespace AutoSclad.MasterSclad
 {
-    public partial class ScladForm : Form
+    public partial class ProviderForm : Form
     {
         public int id = 0;
         public bool edit = false;
 
-        public ScladForm(int id, bool edit)
+        public ProviderForm(int id, bool edit)
         {
             InitializeComponent();
             this.id = id;
@@ -32,11 +32,13 @@ namespace AutoSclad.MasterSclad
 
         private void Sclad_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "autoScladDataSet.provider". При необходимости она может быть перемещена или удалена.
+            this.providerTableAdapter.Fill(this.autoScladDataSet.provider);
             if (this.edit)
             {
-                // TODO: данная строка кода позволяет загрузить данные в таблицу "autoScladDataSet.sklad". При необходимости она может быть перемещена или удалена.
-                skladTableAdapter.Fill(autoScladDataSet.sklad);
-                skladBindingSource.Position = this.id;
+                // TODO: данная строка кода позволяет загрузить данные в таблицу "autoScladDataSet.provider". При необходимости она может быть перемещена или удалена.
+                providerTableAdapter.Fill(autoScladDataSet.provider);
+                providerBindingSource.Position = this.id;
             }
         }
 
@@ -52,18 +54,18 @@ namespace AutoSclad.MasterSclad
                     }
                 }
             } else {
-                AutoScladDataSet.skladRow skladRow = ((AutoScladDataSet.skladRow)(autoScladDataSet.sklad.NewRow()));
+                AutoScladDataSet.providerRow providerRow = ((AutoScladDataSet.providerRow)(autoScladDataSet.provider.NewRow()));
                 foreach (Control c in this.Controls)
                 {
                     foreach (Binding b in c.DataBindings)
                     {
-                        skladRow.SetField(b.BindingMemberInfo.BindingField, c.Text);
+                        providerRow.SetField(b.BindingMemberInfo.BindingField, c.Text);
                     }
                 }
-                autoScladDataSet.sklad.AddskladRow(skladRow);
+                autoScladDataSet.provider.AddproviderRow(providerRow);
             }
-            skladBindingSource.EndEdit();
-            skladTableAdapter.Update(autoScladDataSet);
+            providerBindingSource.EndEdit();
+            providerTableAdapter.Update(autoScladDataSet);
             autoScladDataSet.AcceptChanges();
             this.Close();
         }

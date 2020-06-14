@@ -3,14 +3,14 @@
     partial class Sclad
     {
         /// <summary>
-        /// Required designer variable.
+        /// Требуется переменная конструктора.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Освободить все используемые ресурсы.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,679 +20,682 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Код, автоматически созданный конструктором форм Windows
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Обязательный метод для поддержки конструктора - не изменяйте
+        /// содержимое данного метода при помощи редактора кода.
         /// </summary>
         private void InitializeComponent()
         {
-            this.Exit = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.CreatedSclad = new System.Windows.Forms.TabPage();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.SelectTab = new System.Windows.Forms.Button();
-            this.CreatedScladButton = new System.Windows.Forms.Button();
-            this.ZonaExpiditionAdd = new System.Windows.Forms.TextBox();
-            this.RazmerScladaAdd = new System.Windows.Forms.TextBox();
-            this.TelefonScladAdd = new System.Windows.Forms.TextBox();
-            this.ArdessScladAdd = new System.Windows.Forms.TextBox();
-            this.NameScladAdd = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.AddStelagSclad = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.NextTabCreatedAdres = new System.Windows.Forms.Button();
-            this.BackCreatedSclad = new System.Windows.Forms.Button();
-            this.CreatedStellagToSclad = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.SformirovatAdresIagenek = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.components = new System.ComponentModel.Container();
+            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sizeSklad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sizeExpedit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idskladDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sizeSkladDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sizeExpeditDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.skladBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.autoScladDataSet = new AutoSclad.AutoScladDataSet();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idskladDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dlinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.glubinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visotaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameZDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.staskBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.DeleteSclad = new System.Windows.Forms.TabPage();
-            this.DeleteScladButton = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.DeleteStelagSclad = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.ScladView = new System.Windows.Forms.Label();
-            this.DeleteStelagButton = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
-            this.CreatedSclad.SuspendLayout();
-            this.AddStelagSclad.SuspendLayout();
-            this.SformirovatAdresIagenek.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            this.DeleteSclad.SuspendLayout();
-            this.DeleteStelagSclad.SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idstelazhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dlinaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.glubinaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visotaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresYacheikiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cellBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersTableAdapter = new AutoSclad.AutoScladDataSetTableAdapters.usersTableAdapter();
+            this.skladTableAdapter = new AutoSclad.AutoScladDataSetTableAdapters.skladTableAdapter();
+            this.cellTableAdapter = new AutoSclad.AutoScladDataSetTableAdapters.cellTableAdapter();
+            this.staskTableAdapter = new AutoSclad.AutoScladDataSetTableAdapters.staskTableAdapter();
+            this.materialTabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skladBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoScladDataSet)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staskBindingSource)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cellBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // Exit
-            // 
-            this.Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit.Location = new System.Drawing.Point(678, 12);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(75, 23);
-            this.Exit.TabIndex = 0;
-            this.Exit.Text = "Закрыт";
-            this.Exit.UseVisualStyleBackColor = true;
-            this.Exit.Click += new System.EventHandler(this.Exit_Click);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.CreatedSclad);
-            this.tabControl1.Controls.Add(this.AddStelagSclad);
-            this.tabControl1.Controls.Add(this.SformirovatAdresIagenek);
-            this.tabControl1.Controls.Add(this.DeleteSclad);
-            this.tabControl1.Controls.Add(this.DeleteStelagSclad);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(660, 391);
-            this.tabControl1.TabIndex = 12;
-            // 
-            // CreatedSclad
-            // 
-            this.CreatedSclad.Controls.Add(this.label7);
-            this.CreatedSclad.Controls.Add(this.label6);
-            this.CreatedSclad.Controls.Add(this.SelectTab);
-            this.CreatedSclad.Controls.Add(this.CreatedScladButton);
-            this.CreatedSclad.Controls.Add(this.ZonaExpiditionAdd);
-            this.CreatedSclad.Controls.Add(this.RazmerScladaAdd);
-            this.CreatedSclad.Controls.Add(this.TelefonScladAdd);
-            this.CreatedSclad.Controls.Add(this.ArdessScladAdd);
-            this.CreatedSclad.Controls.Add(this.NameScladAdd);
-            this.CreatedSclad.Controls.Add(this.label5);
-            this.CreatedSclad.Controls.Add(this.label4);
-            this.CreatedSclad.Controls.Add(this.label3);
-            this.CreatedSclad.Controls.Add(this.label2);
-            this.CreatedSclad.Controls.Add(this.label1);
-            this.CreatedSclad.Location = new System.Drawing.Point(4, 22);
-            this.CreatedSclad.Name = "CreatedSclad";
-            this.CreatedSclad.Padding = new System.Windows.Forms.Padding(3);
-            this.CreatedSclad.Size = new System.Drawing.Size(652, 365);
-            this.CreatedSclad.TabIndex = 0;
-            this.CreatedSclad.Text = "Создать склад";
-            this.CreatedSclad.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(255, 123);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "м2";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(255, 164);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(15, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "%";
-            // 
-            // SelectTab
-            // 
-            this.SelectTab.Location = new System.Drawing.Point(154, 213);
-            this.SelectTab.Name = "SelectTab";
-            this.SelectTab.Size = new System.Drawing.Size(75, 23);
-            this.SelectTab.TabIndex = 11;
-            this.SelectTab.Text = "Вперёд";
-            this.SelectTab.UseVisualStyleBackColor = true;
-            // 
-            // CreatedScladButton
-            // 
-            this.CreatedScladButton.Location = new System.Drawing.Point(21, 213);
-            this.CreatedScladButton.Name = "CreatedScladButton";
-            this.CreatedScladButton.Size = new System.Drawing.Size(75, 23);
-            this.CreatedScladButton.TabIndex = 10;
-            this.CreatedScladButton.Text = "Добавить";
-            this.CreatedScladButton.UseVisualStyleBackColor = true;
-            this.CreatedScladButton.Click += new System.EventHandler(this.CreatedScladButton_Click);
-            // 
-            // ZonaExpiditionAdd
-            // 
-            this.ZonaExpiditionAdd.Location = new System.Drawing.Point(154, 161);
-            this.ZonaExpiditionAdd.Name = "ZonaExpiditionAdd";
-            this.ZonaExpiditionAdd.Size = new System.Drawing.Size(100, 20);
-            this.ZonaExpiditionAdd.TabIndex = 9;
-            // 
-            // RazmerScladaAdd
-            // 
-            this.RazmerScladaAdd.Location = new System.Drawing.Point(154, 120);
-            this.RazmerScladaAdd.Name = "RazmerScladaAdd";
-            this.RazmerScladaAdd.Size = new System.Drawing.Size(100, 20);
-            this.RazmerScladaAdd.TabIndex = 8;
-            // 
-            // TelefonScladAdd
-            // 
-            this.TelefonScladAdd.Location = new System.Drawing.Point(154, 82);
-            this.TelefonScladAdd.Name = "TelefonScladAdd";
-            this.TelefonScladAdd.Size = new System.Drawing.Size(100, 20);
-            this.TelefonScladAdd.TabIndex = 7;
-            // 
-            // ArdessScladAdd
-            // 
-            this.ArdessScladAdd.Location = new System.Drawing.Point(154, 47);
-            this.ArdessScladAdd.Name = "ArdessScladAdd";
-            this.ArdessScladAdd.Size = new System.Drawing.Size(100, 20);
-            this.ArdessScladAdd.TabIndex = 6;
-            // 
-            // NameScladAdd
-            // 
-            this.NameScladAdd.Location = new System.Drawing.Point(154, 13);
-            this.NameScladAdd.Name = "NameScladAdd";
-            this.NameScladAdd.Size = new System.Drawing.Size(100, 20);
-            this.NameScladAdd.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 164);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Размер зоны экспедиции ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Размер склада";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Телефон";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Адрес";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Наиминование";
-            // 
-            // AddStelagSclad
-            // 
-            this.AddStelagSclad.Controls.Add(this.tableLayoutPanel1);
-            this.AddStelagSclad.Controls.Add(this.NextTabCreatedAdres);
-            this.AddStelagSclad.Controls.Add(this.BackCreatedSclad);
-            this.AddStelagSclad.Controls.Add(this.CreatedStellagToSclad);
-            this.AddStelagSclad.Controls.Add(this.comboBox1);
-            this.AddStelagSclad.Controls.Add(this.textBox9);
-            this.AddStelagSclad.Controls.Add(this.textBox8);
-            this.AddStelagSclad.Controls.Add(this.textBox7);
-            this.AddStelagSclad.Controls.Add(this.textBox6);
-            this.AddStelagSclad.Controls.Add(this.label13);
-            this.AddStelagSclad.Controls.Add(this.label12);
-            this.AddStelagSclad.Controls.Add(this.label11);
-            this.AddStelagSclad.Controls.Add(this.label10);
-            this.AddStelagSclad.Controls.Add(this.label9);
-            this.AddStelagSclad.Controls.Add(this.label8);
-            this.AddStelagSclad.Location = new System.Drawing.Point(4, 22);
-            this.AddStelagSclad.Name = "AddStelagSclad";
-            this.AddStelagSclad.Padding = new System.Windows.Forms.Padding(3);
-            this.AddStelagSclad.Size = new System.Drawing.Size(652, 365);
-            this.AddStelagSclad.TabIndex = 1;
-            this.AddStelagSclad.Text = "Размещение стелажеи на складе";
-            this.AddStelagSclad.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(277, 7);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(367, 298);
-            this.tableLayoutPanel1.TabIndex = 14;
-            // 
-            // NextTabCreatedAdres
-            // 
-            this.NextTabCreatedAdres.Location = new System.Drawing.Point(569, 311);
-            this.NextTabCreatedAdres.Name = "NextTabCreatedAdres";
-            this.NextTabCreatedAdres.Size = new System.Drawing.Size(75, 23);
-            this.NextTabCreatedAdres.TabIndex = 13;
-            this.NextTabCreatedAdres.Text = "Далее";
-            this.NextTabCreatedAdres.UseVisualStyleBackColor = true;
-            // 
-            // BackCreatedSclad
-            // 
-            this.BackCreatedSclad.Location = new System.Drawing.Point(487, 311);
-            this.BackCreatedSclad.Name = "BackCreatedSclad";
-            this.BackCreatedSclad.Size = new System.Drawing.Size(75, 23);
-            this.BackCreatedSclad.TabIndex = 12;
-            this.BackCreatedSclad.Text = "Назад";
-            this.BackCreatedSclad.UseVisualStyleBackColor = true;
-            // 
-            // CreatedStellagToSclad
-            // 
-            this.CreatedStellagToSclad.Location = new System.Drawing.Point(106, 211);
-            this.CreatedStellagToSclad.Name = "CreatedStellagToSclad";
-            this.CreatedStellagToSclad.Size = new System.Drawing.Size(75, 23);
-            this.CreatedStellagToSclad.TabIndex = 11;
-            this.CreatedStellagToSclad.Text = "Добавить";
-            this.CreatedStellagToSclad.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(149, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 10;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(170, 46);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 9;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(170, 156);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 8;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(170, 117);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 7;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(170, 79);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 6;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(114, 159);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(48, 13);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Глубина";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(113, 120);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(46, 13);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Ширина";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(118, 79);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 13);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Высота";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(10, 79);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Размер стелажа м";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 46);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 13);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Название зоны от A-Z";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 18);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Склад";
-            // 
-            // SformirovatAdresIagenek
-            // 
-            this.SformirovatAdresIagenek.Controls.Add(this.tableLayoutPanel2);
-            this.SformirovatAdresIagenek.Controls.Add(this.listBox1);
-            this.SformirovatAdresIagenek.Controls.Add(this.button2);
-            this.SformirovatAdresIagenek.Controls.Add(this.tabControl2);
-            this.SformirovatAdresIagenek.Controls.Add(this.label15);
-            this.SformirovatAdresIagenek.Controls.Add(this.label14);
-            this.SformirovatAdresIagenek.Location = new System.Drawing.Point(4, 22);
-            this.SformirovatAdresIagenek.Name = "SformirovatAdresIagenek";
-            this.SformirovatAdresIagenek.Size = new System.Drawing.Size(652, 365);
-            this.SformirovatAdresIagenek.TabIndex = 2;
-            this.SformirovatAdresIagenek.Text = "Сформировать адресацию ячеек";
-            this.SformirovatAdresIagenek.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(132, 21);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(516, 147);
-            this.tableLayoutPanel2.TabIndex = 16;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(7, 21);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(112, 147);
-            this.listBox1.TabIndex = 15;
+            // materialTabControl1
+            // 
+            this.materialTabControl1.Controls.Add(this.tabPage1);
+            this.materialTabControl1.Controls.Add(this.tabPage2);
+            this.materialTabControl1.Controls.Add(this.tabPage3);
+            this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl1.Name = "materialTabControl1";
+            this.materialTabControl1.SelectedIndex = 0;
+            this.materialTabControl1.Size = new System.Drawing.Size(749, 478);
+            this.materialTabControl1.TabIndex = 3;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.panel1);
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(741, 452);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Склады";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(3, 403);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(735, 46);
+            this.panel1.TabIndex = 11;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button3.Location = new System.Drawing.Point(542, 7);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(102, 32);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Редактировать";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(11, 334);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button2.Location = new System.Drawing.Point(650, 7);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(637, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Распечатать штрихкод";
+            this.button2.Size = new System.Drawing.Size(82, 32);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Добавить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tabControl2
+            // button1
             // 
-            this.tabControl2.Controls.Add(this.tabPage2);
-            this.tabControl2.Controls.Add(this.tabPage3);
-            this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(7, 177);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(645, 155);
-            this.tabControl2.TabIndex = 2;
+            this.button1.Location = new System.Drawing.Point(3, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 32);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Удалить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.name,
+            this.adress,
+            this.phone,
+            this.sizeSklad,
+            this.sizeExpedit,
+            this.idskladDataGridViewTextBoxColumn1,
+            this.nameDataGridViewTextBoxColumn1,
+            this.adressDataGridViewTextBoxColumn,
+            this.phoneDataGridViewTextBoxColumn,
+            this.sizeSkladDataGridViewTextBoxColumn,
+            this.sizeExpeditDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.skladBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(737, 398);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "Наименование";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 108;
+            // 
+            // adress
+            // 
+            this.adress.DataPropertyName = "adress";
+            this.adress.HeaderText = "Адрес";
+            this.adress.Name = "adress";
+            this.adress.ReadOnly = true;
+            this.adress.Width = 63;
+            // 
+            // phone
+            // 
+            this.phone.DataPropertyName = "phone";
+            this.phone.HeaderText = "Телефон";
+            this.phone.Name = "phone";
+            this.phone.ReadOnly = true;
+            this.phone.Width = 77;
+            // 
+            // sizeSklad
+            // 
+            this.sizeSklad.DataPropertyName = "sizeSklad";
+            this.sizeSklad.HeaderText = "Размеры м2";
+            this.sizeSklad.Name = "sizeSklad";
+            this.sizeSklad.ReadOnly = true;
+            this.sizeSklad.Width = 88;
+            // 
+            // sizeExpedit
+            // 
+            this.sizeExpedit.DataPropertyName = "sizeExpedit";
+            this.sizeExpedit.HeaderText = "Размер зоны экспедиции %";
+            this.sizeExpedit.Name = "sizeExpedit";
+            this.sizeExpedit.ReadOnly = true;
+            this.sizeExpedit.Width = 159;
+            // 
+            // idskladDataGridViewTextBoxColumn1
+            // 
+            this.idskladDataGridViewTextBoxColumn1.DataPropertyName = "idsklad";
+            this.idskladDataGridViewTextBoxColumn1.HeaderText = "idsklad";
+            this.idskladDataGridViewTextBoxColumn1.Name = "idskladDataGridViewTextBoxColumn1";
+            this.idskladDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idskladDataGridViewTextBoxColumn1.Width = 65;
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn1.Width = 58;
+            // 
+            // adressDataGridViewTextBoxColumn
+            // 
+            this.adressDataGridViewTextBoxColumn.DataPropertyName = "adress";
+            this.adressDataGridViewTextBoxColumn.HeaderText = "adress";
+            this.adressDataGridViewTextBoxColumn.Name = "adressDataGridViewTextBoxColumn";
+            this.adressDataGridViewTextBoxColumn.ReadOnly = true;
+            this.adressDataGridViewTextBoxColumn.Width = 63;
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            this.phoneDataGridViewTextBoxColumn.ReadOnly = true;
+            this.phoneDataGridViewTextBoxColumn.Width = 62;
+            // 
+            // sizeSkladDataGridViewTextBoxColumn
+            // 
+            this.sizeSkladDataGridViewTextBoxColumn.DataPropertyName = "sizeSklad";
+            this.sizeSkladDataGridViewTextBoxColumn.HeaderText = "sizeSklad";
+            this.sizeSkladDataGridViewTextBoxColumn.Name = "sizeSkladDataGridViewTextBoxColumn";
+            this.sizeSkladDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sizeSkladDataGridViewTextBoxColumn.Width = 77;
+            // 
+            // sizeExpeditDataGridViewTextBoxColumn
+            // 
+            this.sizeExpeditDataGridViewTextBoxColumn.DataPropertyName = "sizeExpedit";
+            this.sizeExpeditDataGridViewTextBoxColumn.HeaderText = "sizeExpedit";
+            this.sizeExpeditDataGridViewTextBoxColumn.Name = "sizeExpeditDataGridViewTextBoxColumn";
+            this.sizeExpeditDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sizeExpeditDataGridViewTextBoxColumn.Width = 85;
+            // 
+            // skladBindingSource
+            // 
+            this.skladBindingSource.DataMember = "sklad";
+            this.skladBindingSource.DataSource = this.autoScladDataSet;
+            this.skladBindingSource.CurrentChanged += new System.EventHandler(this.skladBindingSource_CurrentChanged_1);
+            // 
+            // autoScladDataSet
+            // 
+            this.autoScladDataSet.DataSetName = "AutoScladDataSet";
+            this.autoScladDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage2
             // 
+            this.tabPage2.AutoScroll = true;
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Controls.Add(this.dataGridView2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(637, 129);
+            this.tabPage2.Size = new System.Drawing.Size(824, 499);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Высота";
+            this.tabPage2.Text = "Размещение стеллажей на складе";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(3, 454);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(818, 42);
+            this.panel2.TabIndex = 13;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button4.Location = new System.Drawing.Point(629, 5);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(98, 32);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Редактировать";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button5.Location = new System.Drawing.Point(733, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(82, 32);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Добавить";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(3, 6);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(82, 32);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Удалить";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn1,
+            this.idskladDataGridViewTextBoxColumn,
+            this.dlinaDataGridViewTextBoxColumn,
+            this.glubinaDataGridViewTextBoxColumn,
+            this.visotaDataGridViewTextBoxColumn,
+            this.nameZDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.staskBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(820, 448);
+            this.dataGridView2.TabIndex = 12;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn1.Width = 40;
+            // 
+            // idskladDataGridViewTextBoxColumn
+            // 
+            this.idskladDataGridViewTextBoxColumn.DataPropertyName = "id_sklad";
+            this.idskladDataGridViewTextBoxColumn.HeaderText = "id_sklad";
+            this.idskladDataGridViewTextBoxColumn.Name = "idskladDataGridViewTextBoxColumn";
+            this.idskladDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idskladDataGridViewTextBoxColumn.Width = 71;
+            // 
+            // dlinaDataGridViewTextBoxColumn
+            // 
+            this.dlinaDataGridViewTextBoxColumn.DataPropertyName = "dlina";
+            this.dlinaDataGridViewTextBoxColumn.HeaderText = "dlina";
+            this.dlinaDataGridViewTextBoxColumn.Name = "dlinaDataGridViewTextBoxColumn";
+            this.dlinaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dlinaDataGridViewTextBoxColumn.Width = 54;
+            // 
+            // glubinaDataGridViewTextBoxColumn
+            // 
+            this.glubinaDataGridViewTextBoxColumn.DataPropertyName = "glubina";
+            this.glubinaDataGridViewTextBoxColumn.HeaderText = "glubina";
+            this.glubinaDataGridViewTextBoxColumn.Name = "glubinaDataGridViewTextBoxColumn";
+            this.glubinaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.glubinaDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // visotaDataGridViewTextBoxColumn
+            // 
+            this.visotaDataGridViewTextBoxColumn.DataPropertyName = "visota";
+            this.visotaDataGridViewTextBoxColumn.HeaderText = "visota";
+            this.visotaDataGridViewTextBoxColumn.Name = "visotaDataGridViewTextBoxColumn";
+            this.visotaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.visotaDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // nameZDataGridViewTextBoxColumn
+            // 
+            this.nameZDataGridViewTextBoxColumn.DataPropertyName = "nameZ";
+            this.nameZDataGridViewTextBoxColumn.HeaderText = "nameZ";
+            this.nameZDataGridViewTextBoxColumn.Name = "nameZDataGridViewTextBoxColumn";
+            this.nameZDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameZDataGridViewTextBoxColumn.Width = 65;
+            // 
+            // staskBindingSource
+            // 
+            this.staskBindingSource.DataMember = "stask";
+            this.staskBindingSource.DataSource = this.autoScladDataSet;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.panel3);
+            this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(637, 129);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(824, 499);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Длина";
+            this.tabPage3.Text = "Сформировать адресацию ячеек";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // panel3
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(637, 129);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Глубина";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.button8);
+            this.panel3.Controls.Add(this.button9);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(3, 455);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(818, 41);
+            this.panel3.TabIndex = 15;
             // 
-            // label15
+            // button8
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(129, 4);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 13);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Стелаж";
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button8.Location = new System.Drawing.Point(733, 4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(82, 32);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "Добавить";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // label14
+            // button9
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(4, 4);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(38, 13);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Склад";
+            this.button9.Location = new System.Drawing.Point(3, 6);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(82, 32);
+            this.button9.TabIndex = 0;
+            this.button9.Text = "Удалить";
+            this.button9.UseVisualStyleBackColor = true;
             // 
-            // DeleteSclad
+            // dataGridView3
             // 
-            this.DeleteSclad.Controls.Add(this.DeleteScladButton);
-            this.DeleteSclad.Controls.Add(this.comboBox2);
-            this.DeleteSclad.Controls.Add(this.label16);
-            this.DeleteSclad.Location = new System.Drawing.Point(4, 22);
-            this.DeleteSclad.Name = "DeleteSclad";
-            this.DeleteSclad.Size = new System.Drawing.Size(652, 365);
-            this.DeleteSclad.TabIndex = 3;
-            this.DeleteSclad.Text = "Удаление склада";
-            this.DeleteSclad.UseVisualStyleBackColor = true;
+            this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn2,
+            this.idstelazhDataGridViewTextBoxColumn,
+            this.dlinaDataGridViewTextBoxColumn1,
+            this.glubinaDataGridViewTextBoxColumn1,
+            this.visotaDataGridViewTextBoxColumn1,
+            this.adresYacheikiDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.cellBindingSource;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(820, 450);
+            this.dataGridView3.TabIndex = 14;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
-            // DeleteScladButton
+            // idDataGridViewTextBoxColumn2
             // 
-            this.DeleteScladButton.Location = new System.Drawing.Point(25, 55);
-            this.DeleteScladButton.Name = "DeleteScladButton";
-            this.DeleteScladButton.Size = new System.Drawing.Size(75, 23);
-            this.DeleteScladButton.TabIndex = 2;
-            this.DeleteScladButton.Text = "Удалить";
-            this.DeleteScladButton.UseVisualStyleBackColor = true;
-            this.DeleteScladButton.Click += new System.EventHandler(this.DeleteScladButton_Click);
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            this.idDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn2.Width = 40;
             // 
-            // comboBox2
+            // idstelazhDataGridViewTextBoxColumn
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(137, 13);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 1;
+            this.idstelazhDataGridViewTextBoxColumn.DataPropertyName = "id_stelazh";
+            this.idstelazhDataGridViewTextBoxColumn.HeaderText = "id_stelazh";
+            this.idstelazhDataGridViewTextBoxColumn.Name = "idstelazhDataGridViewTextBoxColumn";
+            this.idstelazhDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idstelazhDataGridViewTextBoxColumn.Width = 79;
             // 
-            // label16
+            // dlinaDataGridViewTextBoxColumn1
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(3, 13);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(122, 13);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Наиминование склада";
+            this.dlinaDataGridViewTextBoxColumn1.DataPropertyName = "dlina";
+            this.dlinaDataGridViewTextBoxColumn1.HeaderText = "dlina";
+            this.dlinaDataGridViewTextBoxColumn1.Name = "dlinaDataGridViewTextBoxColumn1";
+            this.dlinaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dlinaDataGridViewTextBoxColumn1.Width = 54;
             // 
-            // DeleteStelagSclad
+            // glubinaDataGridViewTextBoxColumn1
             // 
-            this.DeleteStelagSclad.Controls.Add(this.panel4);
-            this.DeleteStelagSclad.Controls.Add(this.label17);
-            this.DeleteStelagSclad.Controls.Add(this.comboBox3);
-            this.DeleteStelagSclad.Controls.Add(this.ScladView);
-            this.DeleteStelagSclad.Controls.Add(this.DeleteStelagButton);
-            this.DeleteStelagSclad.Location = new System.Drawing.Point(4, 22);
-            this.DeleteStelagSclad.Name = "DeleteStelagSclad";
-            this.DeleteStelagSclad.Size = new System.Drawing.Size(652, 365);
-            this.DeleteStelagSclad.TabIndex = 4;
-            this.DeleteStelagSclad.Text = "Удаление стелажа";
-            this.DeleteStelagSclad.UseVisualStyleBackColor = true;
+            this.glubinaDataGridViewTextBoxColumn1.DataPropertyName = "glubina";
+            this.glubinaDataGridViewTextBoxColumn1.HeaderText = "glubina";
+            this.glubinaDataGridViewTextBoxColumn1.Name = "glubinaDataGridViewTextBoxColumn1";
+            this.glubinaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.glubinaDataGridViewTextBoxColumn1.Width = 66;
             // 
-            // panel4
+            // visotaDataGridViewTextBoxColumn1
             // 
-            this.panel4.Location = new System.Drawing.Point(99, 45);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(550, 317);
-            this.panel4.TabIndex = 4;
+            this.visotaDataGridViewTextBoxColumn1.DataPropertyName = "visota";
+            this.visotaDataGridViewTextBoxColumn1.HeaderText = "visota";
+            this.visotaDataGridViewTextBoxColumn1.Name = "visotaDataGridViewTextBoxColumn1";
+            this.visotaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.visotaDataGridViewTextBoxColumn1.Width = 60;
             // 
-            // label17
+            // adresYacheikiDataGridViewTextBoxColumn
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(31, 85);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(45, 13);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "Стелаж";
+            this.adresYacheikiDataGridViewTextBoxColumn.DataPropertyName = "adresYacheiki";
+            this.adresYacheikiDataGridViewTextBoxColumn.HeaderText = "adresYacheiki";
+            this.adresYacheikiDataGridViewTextBoxColumn.Name = "adresYacheikiDataGridViewTextBoxColumn";
+            this.adresYacheikiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.adresYacheikiDataGridViewTextBoxColumn.Width = 99;
             // 
-            // comboBox3
+            // cellBindingSource
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(80, 10);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 2;
+            this.cellBindingSource.DataMember = "cell";
+            this.cellBindingSource.DataSource = this.autoScladDataSet;
             // 
-            // ScladView
+            // iDDataGridViewTextBoxColumn
             // 
-            this.ScladView.AutoSize = true;
-            this.ScladView.Location = new System.Drawing.Point(15, 13);
-            this.ScladView.Name = "ScladView";
-            this.ScladView.Size = new System.Drawing.Size(38, 13);
-            this.ScladView.TabIndex = 1;
-            this.ScladView.Text = "Склад";
+            this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "№";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // DeleteStelagButton
+            // nameDataGridViewTextBoxColumn
             // 
-            this.DeleteStelagButton.Location = new System.Drawing.Point(18, 193);
-            this.DeleteStelagButton.Name = "DeleteStelagButton";
-            this.DeleteStelagButton.Size = new System.Drawing.Size(75, 158);
-            this.DeleteStelagButton.TabIndex = 0;
-            this.DeleteStelagButton.Text = "Удалить";
-            this.DeleteStelagButton.UseVisualStyleBackColor = true;
-            this.DeleteStelagButton.Click += new System.EventHandler(this.DeleteStelagButton_Click);
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Название";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "№";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Название";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "users";
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // skladTableAdapter
+            // 
+            this.skladTableAdapter.ClearBeforeFill = true;
+            // 
+            // cellTableAdapter
+            // 
+            this.cellTableAdapter.ClearBeforeFill = true;
+            // 
+            // staskTableAdapter
+            // 
+            this.staskTableAdapter.ClearBeforeFill = true;
             // 
             // Sclad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 415);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.Exit);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(765, 415);
-            this.MinimumSize = new System.Drawing.Size(765, 415);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.ClientSize = new System.Drawing.Size(749, 478);
+            this.Controls.Add(this.materialTabControl1);
             this.Name = "Sclad";
-            this.Text = "Sclad";
-            this.Load += new System.EventHandler(this.Sclad_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sclad_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Sclad_MouseMove);
-            this.tabControl1.ResumeLayout(false);
-            this.CreatedSclad.ResumeLayout(false);
-            this.CreatedSclad.PerformLayout();
-            this.AddStelagSclad.ResumeLayout(false);
-            this.AddStelagSclad.PerformLayout();
-            this.SformirovatAdresIagenek.ResumeLayout(false);
-            this.SformirovatAdresIagenek.PerformLayout();
-            this.tabControl2.ResumeLayout(false);
-            this.DeleteSclad.ResumeLayout(false);
-            this.DeleteSclad.PerformLayout();
-            this.DeleteStelagSclad.ResumeLayout(false);
-            this.DeleteStelagSclad.PerformLayout();
+            this.Text = "Склад";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.materialTabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skladBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoScladDataSet)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staskBindingSource)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cellBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Exit;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage CreatedSclad;
-        private System.Windows.Forms.TabPage AddStelagSclad;
-        private System.Windows.Forms.TabPage SformirovatAdresIagenek;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button SelectTab;
-        private System.Windows.Forms.Button CreatedScladButton;
-        private System.Windows.Forms.TextBox ZonaExpiditionAdd;
-        private System.Windows.Forms.TextBox RazmerScladaAdd;
-        private System.Windows.Forms.TextBox TelefonScladAdd;
-        private System.Windows.Forms.TextBox ArdessScladAdd;
-        private System.Windows.Forms.TextBox NameScladAdd;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button NextTabCreatedAdres;
-        private System.Windows.Forms.Button BackCreatedSclad;
-        private System.Windows.Forms.Button CreatedStellagToSclad;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TabControl tabControl2;
+        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource usersBindingSource;
+        private AutoScladDataSetTableAdapters.usersTableAdapter usersTableAdapter;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TabPage DeleteSclad;
-        private System.Windows.Forms.Button DeleteScladButton;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TabPage DeleteStelagSclad;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label ScladView;
-        private System.Windows.Forms.Button DeleteStelagButton;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.BindingSource cellBindingSource;
+        private AutoScladDataSetTableAdapters.cellTableAdapter cellTableAdapter;
+        private AutoScladDataSet autoScladDataSet;
+        private AutoScladDataSetTableAdapters.skladTableAdapter skladTableAdapter;
+        private AutoScladDataSetTableAdapters.staskTableAdapter staskTableAdapter;
+        private System.Windows.Forms.BindingSource staskBindingSource;
+        private System.Windows.Forms.BindingSource skladBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idskladDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dlinaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn glubinaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn visotaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameZDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sizeSklad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sizeExpedit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idskladDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sizeSkladDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sizeExpeditDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idstelazhDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dlinaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn glubinaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn visotaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresYacheikiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expr1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expr2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expr3DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expr4DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idskladDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameZDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expr5DataGridViewTextBoxColumn;
     }
 }
+

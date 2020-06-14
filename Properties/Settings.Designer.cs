@@ -32,16 +32,5 @@ namespace AutoSclad.Properties {
                 return ((string)(this["autoscladConnectionString"]));
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\KZTSH.mdf;Int" +
-            "egrated Security=True;Connect Timeout=30")]
-        public string KZTSHConnectionString {
-            get {
-                return ((string)(this["KZTSHConnectionString"]));
-            }
-        }
     }
 }

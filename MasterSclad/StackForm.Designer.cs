@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Exit = new System.Windows.Forms.Button();
-            this.skladBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.autoScladDataSet = new AutoSclad.AutoScladDataSet();
             this.button1 = new System.Windows.Forms.Button();
-            this.skladTableAdapter = new AutoSclad.AutoScladDataSetTableAdapters.skladTableAdapter();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.staskBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.skladBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -45,8 +45,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.skladBindingSource)).BeginInit();
+            this.staskTableAdapter = new AutoSclad.AutoScladDataSetTableAdapters.staskTableAdapter();
+            this.skladTableAdapter = new AutoSclad.AutoScladDataSetTableAdapters.skladTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.autoScladDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staskBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skladBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Exit
@@ -59,11 +62,7 @@
             this.Exit.TabIndex = 0;
             this.Exit.Text = "Закрыт";
             this.Exit.UseVisualStyleBackColor = true;
-            // 
-            // skladBindingSource
-            // 
-            this.skladBindingSource.DataMember = "sklad";
-            this.skladBindingSource.DataSource = this.autoScladDataSet;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // autoScladDataSet
             // 
@@ -80,25 +79,33 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // skladTableAdapter
-            // 
-            this.skladTableAdapter.ClearBeforeFill = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.skladBindingSource, "name", true));
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.skladBindingSource, "idsklad", true));
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.staskBindingSource, "id_sklad", true));
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.skladBindingSource, "idsklad", true));
             this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.skladBindingSource, "name", true));
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.skladBindingSource, "name", true));
+            this.comboBox1.DataSource = this.staskBindingSource;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(158, 78);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(143, 21);
             this.comboBox1.TabIndex = 25;
             // 
+            // staskBindingSource
+            // 
+            this.staskBindingSource.DataMember = "stask";
+            this.staskBindingSource.DataSource = this.autoScladDataSet;
+            // 
+            // skladBindingSource
+            // 
+            this.skladBindingSource.DataMember = "sklad";
+            this.skladBindingSource.DataSource = this.autoScladDataSet;
+            // 
             // textBox9
             // 
+            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.staskBindingSource, "nameZ", true));
             this.textBox9.Location = new System.Drawing.Point(158, 109);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(143, 20);
@@ -106,6 +113,7 @@
             // 
             // textBox8
             // 
+            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.staskBindingSource, "glubina", true));
             this.textBox8.Location = new System.Drawing.Point(158, 219);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.textBox8.Name = "textBox8";
@@ -114,6 +122,7 @@
             // 
             // textBox7
             // 
+            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.staskBindingSource, "dlina", true));
             this.textBox7.Location = new System.Drawing.Point(158, 189);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(143, 20);
@@ -121,6 +130,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.staskBindingSource, "visota", true));
             this.textBox6.Location = new System.Drawing.Point(158, 160);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(143, 20);
@@ -180,6 +190,14 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Склад";
             // 
+            // staskTableAdapter
+            // 
+            this.staskTableAdapter.ClearBeforeFill = true;
+            // 
+            // skladTableAdapter
+            // 
+            this.skladTableAdapter.ClearBeforeFill = true;
+            // 
             // StackForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,8 +221,10 @@
             this.Name = "StackForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Редактирование стеллажа";
-            ((System.ComponentModel.ISupportInitialize)(this.skladBindingSource)).EndInit();
+            this.Load += new System.EventHandler(this.StackForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.autoScladDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staskBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skladBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,8 +235,6 @@
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button button1;
         private AutoScladDataSet autoScladDataSet;
-        private System.Windows.Forms.BindingSource skladBindingSource;
-        private AutoScladDataSetTableAdapters.skladTableAdapter skladTableAdapter;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
@@ -228,5 +246,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.BindingSource staskBindingSource;
+        private AutoScladDataSetTableAdapters.staskTableAdapter staskTableAdapter;
+        private System.Windows.Forms.BindingSource skladBindingSource;
+        private AutoScladDataSetTableAdapters.skladTableAdapter skladTableAdapter;
     }
 }

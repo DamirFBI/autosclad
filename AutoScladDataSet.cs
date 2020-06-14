@@ -9,6 +9,10 @@
 
 namespace AutoSclad.AutoScladDataSetTableAdapters
 {
+    partial class productTableAdapter
+    {
+    }
+
     partial class cellTableAdapter
     {
     }

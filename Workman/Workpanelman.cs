@@ -21,8 +21,8 @@ namespace AutoSclad.Workman
         private void ExitLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            loginform loginform = new loginform();
-            loginform.ShowDialog(); //Закрывает программу.
+/*            loginform loginform = new loginform();
+            loginform.ShowDialog(); //Закрывает программу.*/
         }
 
         private void button1_Click(object sender, EventArgs e)

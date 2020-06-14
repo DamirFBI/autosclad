@@ -34,8 +34,8 @@ namespace AutoSclad.ServiceDialog
         private void YesExit_MouseClick(object sender, MouseEventArgs e)
         {
             this.Close();
-            loginform loginformOpenForm = new loginform();
-            loginformOpenForm.Show();
+            /*loginform loginformOpenForm = new loginform();
+            loginformOpenForm.Show();*/
         }
 
         private void NoExit_MouseClick(object sender, MouseEventArgs e)

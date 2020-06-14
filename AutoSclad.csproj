@@ -66,7 +66,6 @@
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
     </Reference>
-    <Reference Include="System.ComponentModel, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
@@ -79,9 +78,6 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xaml" />
@@ -122,23 +118,11 @@
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Dibi.cs" />
-    <Compile Include="loginform.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginform.Designer.cs">
-      <DependentUpon>loginform.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MasterSclad\AddMarka.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterSclad\AddMarka.Designer.cs">
-      <DependentUpon>AddMarka.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MasterSclad\AddModel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterSclad\AddModel.Designer.cs">
-      <DependentUpon>AddModel.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterSclad\AddPostovhick.cs">
       <SubType>Form</SubType>
@@ -158,47 +142,77 @@
     <Compile Include="MasterSclad\CallWorkmanToMaster.Designer.cs">
       <DependentUpon>CallWorkmanToMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterSclad\CreatedMarka.cs">
+    <Compile Include="MasterSclad\UsersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterSclad\CreatedMarka.Designer.cs">
-      <DependentUpon>CreatedMarka.cs</DependentUpon>
+    <Compile Include="MasterSclad\UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterSclad\CreatedModel.cs">
+    <Compile Include="MasterSclad\Users.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterSclad\CreatedModel.Designer.cs">
-      <DependentUpon>CreatedModel.cs</DependentUpon>
+    <Compile Include="MasterSclad\Users.designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterSclad\EditMarka.cs">
+    <Compile Include="MasterSclad\ProviderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterSclad\EditMarka.Designer.cs">
-      <DependentUpon>EditMarka.cs</DependentUpon>
+    <Compile Include="MasterSclad\ProviderForm.Designer.cs">
+      <DependentUpon>ProviderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterSclad\EditModel.cs">
+    <Compile Include="MasterSclad\Provider.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterSclad\EditModel.Designer.cs">
-      <DependentUpon>EditModel.cs</DependentUpon>
+    <Compile Include="MasterSclad\Provider.designer.cs">
+      <DependentUpon>Provider.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterSclad\MainForm.cs">
+    <Compile Include="MasterSclad\ModelsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterSclad\MainForm.designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="MasterSclad\ModelsForm.Designer.cs">
+      <DependentUpon>ModelsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterSclad\MasterWork.cs">
+    <Compile Include="MasterSclad\Models.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterSclad\MasterWork.Designer.cs">
-      <DependentUpon>MasterWork.cs</DependentUpon>
+    <Compile Include="MasterSclad\Models.designer.cs">
+      <DependentUpon>Models.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSclad\Marks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSclad\Marks.designer.cs">
+      <DependentUpon>Marks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSclad\Tovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSclad\Tovar.designer.cs">
+      <DependentUpon>Tovar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSclad\Sclad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSclad\Sclad.designer.cs">
+      <DependentUpon>Sclad.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterSclad\CellForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MasterSclad\CellForm.Designer.cs">
       <DependentUpon>CellForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSclad\MarksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSclad\MarksForm.Designer.cs">
+      <DependentUpon>MarksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSclad\TovarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSclad\TovarForm.Designer.cs">
+      <DependentUpon>TovarForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterSclad\StackForm.cs">
       <SubType>Form</SubType>
@@ -211,12 +225,6 @@
     </Compile>
     <Compile Include="MasterSclad\ScladForm.Designer.cs">
       <DependentUpon>ScladForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MasterSclad\Sclad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterSclad\Sclad.Designer.cs">
-      <DependentUpon>Sclad.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -270,14 +278,8 @@
     <EmbeddedResource Include="AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginform.resx">
-      <DependentUpon>loginform.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\AddMarka.resx">
-      <DependentUpon>AddMarka.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\AddModel.resx">
-      <DependentUpon>AddModel.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\AddPostovhick.resx">
       <DependentUpon>AddPostovhick.cs</DependentUpon>
@@ -288,35 +290,47 @@
     <EmbeddedResource Include="MasterSclad\CallWorkmanToMaster.resx">
       <DependentUpon>CallWorkmanToMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\CreatedMarka.resx">
-      <DependentUpon>CreatedMarka.cs</DependentUpon>
+    <EmbeddedResource Include="MasterSclad\UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\CreatedModel.resx">
-      <DependentUpon>CreatedModel.cs</DependentUpon>
+    <EmbeddedResource Include="MasterSclad\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\EditMarka.resx">
-      <DependentUpon>EditMarka.cs</DependentUpon>
+    <EmbeddedResource Include="MasterSclad\ProviderForm.resx">
+      <DependentUpon>ProviderForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\EditModel.resx">
-      <DependentUpon>EditModel.cs</DependentUpon>
+    <EmbeddedResource Include="MasterSclad\Provider.resx">
+      <DependentUpon>Provider.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="MasterSclad\ModelsForm.resx">
+      <DependentUpon>ModelsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\MasterWork.resx">
-      <DependentUpon>MasterWork.cs</DependentUpon>
+    <EmbeddedResource Include="MasterSclad\Models.resx">
+      <DependentUpon>Models.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSclad\Marks.resx">
+      <DependentUpon>Marks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSclad\Tovar.resx">
+      <DependentUpon>Tovar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSclad\Sclad.resx">
+      <DependentUpon>Sclad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\CellForm.resx">
       <DependentUpon>CellForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSclad\MarksForm.resx">
+      <DependentUpon>MarksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSclad\TovarForm.resx">
+      <DependentUpon>TovarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\StackForm.resx">
       <DependentUpon>StackForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSclad\ScladForm.resx">
       <DependentUpon>ScladForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterSclad\Sclad.resx">
-      <DependentUpon>Sclad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

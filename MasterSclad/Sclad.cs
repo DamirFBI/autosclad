@@ -1,14 +1,12 @@
-﻿using AutoSclad.ServiceDialog;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using MaterialSkin.Controls;
 
 namespace AutoSclad.MasterSclad
 {
@@ -17,70 +15,238 @@ namespace AutoSclad.MasterSclad
         public Sclad()
         {
             InitializeComponent();
+
+           /*this.IsMdiContainer = true;*/
         }
-        Point lastPoint;
-        private void Sclad_MouseMove(object sender, MouseEventArgs e)
+
+        private void ВыходToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left) //Если пользователь зажал левой кнопкой по окну, то он может передвигать окно.
-            {
-                this.Left += e.X - lastPoint.X;
-                this.Top += e.Y - lastPoint.Y;
-            }
+            Close();
         }
 
-        private void Sclad_MouseDown(object sender, MouseEventArgs e)
+        private void driversToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lastPoint = new Point(e.X, e.Y);    //Закрепляет позицию после перемещения
+/*            Form2 FormDrives = new Form2();
+            FormDrives.MdiParent = this;
+            FormDrives.Show();*/
+
         }
 
-        private void Exit_Click(object sender, EventArgs e)
+        private void busesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close(); //Закрывает программу.
+/*            Form3 FormDrives = new Form3();
+            FormDrives.MdiParent = this;
+            FormDrives.Show();*/
+
         }
 
-        private void DeleteStelagButton_Click(object sender, EventArgs e)
+        private void conductorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DeleteYesNo deleteYesNoStelagOpenDialog = new DeleteYesNo();
-            deleteYesNoStelagOpenDialog.ShowDialog();
+            /*Form4 FormDrives = new Form4();
+            FormDrives.MdiParent = this;
+            FormDrives.Show();*/
+
         }
 
-        public void DeleteScladButton_Click(object sender, EventArgs e)
+        private void routesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DeleteYesNo deleteYesNoScladOpenDialog = new DeleteYesNo();
-            deleteYesNoScladOpenDialog.ShowDialog();
+            /*Form5 FormDrives = new Form5();
+            FormDrives.MdiParent = this;
+            FormDrives.Show();*/
 
         }
 
-        private void Sclad_Load(object sender, EventArgs e)
+        private void отработанноеВремяВодителейToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           /* Form6 FormDrives = new Form6();
+            FormDrives.MdiParent = this;
+            FormDrives.Show();*/
+
+        }
+
+        private void пробегАвтобусовToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*Form7 FormDrives = new Form7();
+            FormDrives.MdiParent = this;
+            FormDrives.Show();
+*/
+        }
+
+        private void выручкаКондукторовToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*Form8 FormDrives = new Form8();
+            FormDrives.MdiParent = this;
+            FormDrives.Show();*/
+
+        }
+
+        private void путивыеЛистыToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            /*Form9 FormDrives = new Form9();
+            FormDrives.MdiParent = this;
+            FormDrives.Show();*/
+
+        }
+
+        private void путивыеЛистыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*Form10 FormDrives = new Form10();
+            FormDrives.MdiParent = this;
+            FormDrives.Show();*/
+
+        }
+
+        private void реестрПутёвокВодителейToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*Form11 FormDriversPrint = new Form11();
+            FormDriversPrint.Show();*/
+        }
+
+        private void шаблонДоговораНаПоставкуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"doc\dogovor_na_postavku.doc");
+        }
+
+        private void справкаToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("Справка.pdf");
+        }
+
+        private void оПрограмеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            /*AboutBox1 FormAbout = new AboutBox1();
+            
+            FormAbout.ShowDialog();*/
+        }
+
+        private void materialPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void CreatedScladButton_Click(object sender, EventArgs e)
+        private void MainTabSelector_Click(object sender, EventArgs e)
         {
-            Dibi db = new Dibi();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `Sclad` ( `NameSclad`, `Adress`, `Telefon`, `RazmerSclada`, `RazmerExpidition`) VALUES (@NameSclad, @Adress, @Telefon, @RazmerSclada, @RazmerExpidition)", db.getconnection());
-            command.Parameters.Add("@NameSclad", MySqlDbType.VarChar).Value = NameScladAdd.Text;
-            command.Parameters.Add("@Adress", MySqlDbType.VarChar).Value = ArdessScladAdd.Text;
-            command.Parameters.Add("@Telefon", MySqlDbType.VarChar).Value = TelefonScladAdd.Text;
-            command.Parameters.Add("@RazmerSclada", MySqlDbType.VarChar).Value = RazmerScladaAdd.Text;
-            command.Parameters.Add("@RazmerExpidition", MySqlDbType.VarChar).Value = ZonaExpiditionAdd.Text;
-
-            db.openconnection();
-
-            if (command.ExecuteNonQuery() == 1)
-            {
-                MessageBox.Show("Склад был создан");
-            }
-            else
-                MessageBox.Show("Склад не был создан");
-
-            db.closeconnection();
-           
 
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "autoScladDataSet.sklad". При необходимости она может быть перемещена или удалена.
+            this.skladTableAdapter.Fill(this.autoScladDataSet.sklad);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "autoScladDataSet.stask". При необходимости она может быть перемещена или удалена.
+            this.staskTableAdapter.FillBy(this.autoScladDataSet.stask);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void open_ScladForm(bool edit = false)
+        {
+            int id = skladBindingSource.Position;
+            var form = new ScladForm(id, edit);
+            form.ShowDialog();
+            this.skladTableAdapter.Fill(this.autoScladDataSet.sklad);
+            skladBindingSource.Position = id;
+        }
+
+        private void open_StackForm(bool edit = false)
+        {
+            int id = staskBindingSource.Position;
+            var form = new StackForm(id, edit);
+            form.ShowDialog();
+            this.staskTableAdapter.Fill(this.autoScladDataSet.stask);
+            staskBindingSource.Position = id;
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            open_ScladForm(false);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            open_ScladForm(true);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            open_StackForm(false);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            open_StackForm(true);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            var form = new CellForm();
+            form.ShowDialog();
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            skladBindingSource.RemoveCurrent();
+            skladTableAdapter.Update(autoScladDataSet);
+            skladBindingSource.EndEdit();
+            autoScladDataSet.AcceptChanges();
+        }
+
+        private void skladBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void skladBindingSource_CurrentChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fillByToolStripButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialCard1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
