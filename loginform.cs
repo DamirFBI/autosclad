@@ -1,4 +1,5 @@
-﻿using AutoSclad.Workman;
+﻿using AutoSclad.MasterSclad;
+using AutoSclad.Workman;
 using MySql.Data.MySqlClient;
 using System;
 using System.Data;
@@ -22,8 +23,8 @@ namespace AutoSclad
         {
             if (e.Button == MouseButtons.Left) //Если пользователь зажал левой кнопкой по окну, то он может передвигать окно.
             {
-              this.Left += e.X - lastPoint.X;
-              this.Top += e.Y - lastPoint.Y;
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
             }
         }
 
@@ -32,7 +33,7 @@ namespace AutoSclad
             lastPoint = new Point(e.X, e.Y);    //Закрепляет позицию после перемещения
         }
 
-        private void buttonlogin_Click(object sender, EventArgs e)
+        public void buttonlogin_Click(object sender, EventArgs e)
         {
             string loginuser = LoginBox.Text;       //Создание переменной loginuser и присвоения к логинБоксу
             string passuser = PasswordBox.Text;     //Создание переменной passuser и присвоения к парольБоксу
@@ -43,7 +44,7 @@ namespace AutoSclad
             DataTable table = new DataTable();   //Создания переменной и выделение памяти
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();   //Создания переменной и выделение памяти
-            string TypeUserBD = "Работник";
+            string TypeUserBD = "1";
 
             MySqlCommand command = new MySqlCommand(" SELECT * FROM `users` WHERE `login` = @uL AND `pass` = @uP AND `typeuser` = @uT ", db.getconnection());
             command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginuser;  //Присвоения значений из БД
@@ -61,6 +62,22 @@ namespace AutoSclad
                     this.Hide();
                     Workpanelman workpanelOpenman = new Workpanelman();
                     workpanelOpenman.Show(); //Закрывает программу.
+
+                }
+                else if (TypeUserBD == "1")
+                {
+
+                    this.Hide();
+                    MasterWork MasterWorkOpen = new MasterWork();
+                    MasterWorkOpen.Show(); //Закрывает программу.
+
+                }
+                else if (TypeUserBD == "Admin")
+                {
+
+                    this.Hide();
+                    RegisterForm RegisterFormOpen = new RegisterForm();
+                    RegisterFormOpen.Show(); //Закрывает программу.
 
                 }
             }

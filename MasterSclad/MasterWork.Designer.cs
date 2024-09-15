@@ -54,6 +54,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Запросы";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Exit
             // 
@@ -75,6 +76,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Разместить товар";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // MasterWork
             // 

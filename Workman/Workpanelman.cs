@@ -21,14 +21,14 @@ namespace AutoSclad.Workman
         private void ExitLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            loginform loginform = new loginform();
-            loginform.ShowDialog(); //Закрывает программу.
+/*            loginform loginform = new loginform();
+            loginform.ShowDialog(); //Закрывает программу.*/
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             CallToSclad callToSclad = new CallToSclad();
-            callToSclad.ShowDialog();
+            callToSclad.Show();
         }
         Point lastPoint;
         private void Workpanelman_MouseMove(object sender, MouseEventArgs e)

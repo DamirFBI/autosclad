@@ -33,15 +33,14 @@ namespace AutoSclad.ServiceDialog
 
         private void YesExit_MouseClick(object sender, MouseEventArgs e)
         {
-            this.Hide();
-            loginform loginform = new loginform();
-            loginform.ShowDialog();
+            this.Close();
+            /*loginform loginformOpenForm = new loginform();
+            loginformOpenForm.Show();*/
         }
 
         private void NoExit_MouseClick(object sender, MouseEventArgs e)
         {
-            this.Hide();
-            return;
+            this.Close();
         }
 
         private void ExitProgramm_Click(object sender, EventArgs e)
